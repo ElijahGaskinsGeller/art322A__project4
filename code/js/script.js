@@ -52,7 +52,7 @@ function page_init(lib) {
     let page = _this.page;
     console.log(page.nominalBounds);
 
-    document.body.style.overflow = "hidden";
+    // document.body.style.overflow = "hidden";
 
     // let testItem = _this.test_item;
 
@@ -164,6 +164,8 @@ function page_init(lib) {
         stage.update();
         stage.tickOnUpdate = true;
 
+        console.log(document.body.availWidth);
+
     }
 
     function onScroll(e) {
@@ -177,16 +179,20 @@ function page_init(lib) {
 
     }
 
+
+    let lastScrollX = window.scrollX;
+    let lastScrollY = window.scrollY;
     function update(t) {
 
-        window.scrollTo(Number.MAX_SAFE_INTEGER, Number.MAX_SAFE_INTEGER);
 
-
-        let scrollLimitX = window.scrollX;
-
-        let scrollLimitY = window.scrollY;
-
-        window.scrollTo(scrollLimitX/2, scrollLimitY/2);
+        // window.scrollTo(Number.MAX_SAFE_INTEGER, Number.MAX_SAFE_INTEGER);
+        //
+        //
+        // let scrollLimitX = window.scrollX;
+        //
+        // let scrollLimitY = window.scrollY;
+        //
+        // window.scrollTo(scrollLimitX/2, scrollLimitY/2);
 
         // console.log(scrollX);
 
