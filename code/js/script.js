@@ -52,6 +52,8 @@ function page_init(lib) {
     let page = _this.page;
     console.log(page.nominalBounds);
 
+    document.body.style.overflow = "hidden";
+
     // let testItem = _this.test_item;
 
     // let page = _this.page;
@@ -161,7 +163,7 @@ function page_init(lib) {
         stage.tickOnUpdate = false;
         stage.update();
         stage.tickOnUpdate = true;
-                
+
     }
 
     function onScroll(e) {
