@@ -345,14 +345,21 @@ if (reversed == null) { reversed = false; }
 
 	// Layer_1
 	this.instance = new lib.IntroAnim();
-	this.instance.setTransform(344.6,383.95,1.9999,1.9999,0,0,0,108.1,192);
+	this.instance.setTransform(288.55,508.7,2.6666,2.6666,0,0,0,108.2,191.9);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+
+	// Layer_2
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("rgba(255,0,255,0.996)").s().p("A4ZYaMAAAgwzMAwzAAAMAAAAwzg");
+	this.shape.setTransform(511.45,294.05);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(640.4,384,256,384);
+p.nominalBounds = new cjs.Rectangle(512,381,512,640);
 // library properties:
 lib.properties = {
 	id: '668BAA9C462E5744A1D396D11B0943E7',
