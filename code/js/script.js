@@ -50,9 +50,9 @@ function page_init(lib) {
     let _this = stage.children[0];
 
     let page = _this.page;
-    console.log(page.nominalBounds);
+    // console.log(page.nominalBounds);
 
-    // document.body.style.overflow = "hidden";
+    document.body.style.overflow = "hidden";
 
     // let testItem = _this.test_item;
 
@@ -164,7 +164,7 @@ function page_init(lib) {
         stage.update();
         stage.tickOnUpdate = true;
 
-        console.log(document.body.availWidth);
+        // console.log(document.body.scroll);
 
     }
 
