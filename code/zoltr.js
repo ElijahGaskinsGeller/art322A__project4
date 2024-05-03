@@ -343,12 +343,6 @@ if (reversed == null) { reversed = false; }
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
 
-	// Layer_1
-	this.instance = new lib.IntroAnim();
-	this.instance.setTransform(288.55,508.7,2.6666,2.6666,0,0,0,108.2,191.9);
-
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
-
 	// Layer_2
 	this.shape = new cjs.Shape();
 	this.shape.graphics.f("rgba(255,0,255,0.996)").s().p("A4ZYaMAAAgwzMAwzAAAMAAAAwzg");
@@ -356,10 +350,24 @@ if (reversed == null) { reversed = false; }
 
 	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
 
+	// Layer_3
+	this.shape_1 = new cjs.Shape();
+	this.shape_1.graphics.f().s("#FF00FF").ss(1,1,1).p("Eg77AEzMB33AAAEg77gEyMB33AAA");
+	this.shape_1.setTransform(514.725,737.225);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape_1).wait(1));
+
+	// Layer_1
+	this.page = new lib.IntroAnim();
+	this.page.name = "page";
+	this.page.setTransform(514.7,383.95,1.9998,1.9998,0,0,0,192,192);
+
+	this.timeline.addTween(cjs.Tween.get(this.page).wait(1));
+
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(512,381,512,640);
+p.nominalBounds = new cjs.Rectangle(642.1,384,257.29999999999995,385);
 // library properties:
 lib.properties = {
 	id: '668BAA9C462E5744A1D396D11B0943E7',

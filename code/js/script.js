@@ -51,6 +51,9 @@ function page_init(lib){
 
     let _this = stage.children[0];
 
+    let page = _this.page;
+    console.log(page.nominalBounds);
+
     // let testItem = _this.test_item;
 
     // let page = _this.page;
@@ -118,11 +121,33 @@ function page_init(lib){
     // let scrollStart = page.y + padding;
     // let scrollEnd = calcScrollEnd();
 
+    console.log("x: "+stage.scaleX);
+    console.log("y: "+canvas.clientWidth / canvas.clientHeight * window.devicePixelRatio * (lib.properties.height / lib.properties.width));
+
+
+    console.log("page x: "+page.scaleX);
+    console.log("page y: "+page.scaleY);
+
+    console.log("page nb x: "+(page.scaleX * page.nominalBounds.width));
+    console.log("page nb y: "+(page.scaleY* page.nominalBounds.height));
 
     function onResize(e){
         let stageRatio = lib.properties.height / lib.properties.width;
 
         stage.scaleY = canvas.clientWidth / canvas.clientHeight * window.devicePixelRatio * stageRatio;
+        // stage.scaleY *= .98;
+        // stage.scaleX *= .98;
+        console.log(stage.scaleY)
+        // stage.scaleX = 1;
+
+
+
+        // stage.scaleY = 1;
+        // stage.scaleX = 1;
+
+        stage.scaleY *= .95;
+        stage.scaleX *= .95;
+
 
         if(window.innerWidth > window.innerHeight){
 
