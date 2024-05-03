@@ -1,16 +1,22 @@
 .container{
     /*height: 500vh !important;*/
-    /*width: 100vw !important;*/
+    /*width: auto !important;*/
     height: 100vh !important;
+    margin: auto;
 }
 
 .main-canvas{
     /*height: 100vh !important;*/
-    margin: 0 !important;
+    margin: auto !important;
+    /*margin: 0 !important;*/
     position: fixed !important;
 
-    /*width: 100vw !important;*/
+    /*width: auto !important;*/
     height: 100vh !important;
+}
+
+body{
+    overflow: hidden;
 }
 
 .head {
