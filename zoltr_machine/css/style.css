@@ -1,0 +1,80 @@
+.container{
+    /*height: 500vh !important;*/
+    width: 100vw !important;
+    height: 100vh !important;
+}
+
+.main-canvas{
+    /*height: 100vh !important;*/
+    margin: 0 !important;
+    position: fixed !important;
+
+    width: 100vw !important;
+    height: 100vh !important;
+}
+
+.head {
+    margin: auto;
+    /*max-width: 760px;*/
+}
+
+.text-container {
+    margin: auto;
+    /*max-width: 760px;*/
+}
+
+.hidden {
+    display: none;
+}
+
+h1 {
+    font-size: 3.45rem;
+    /*max-width: 760px;*/
+    font-family: georgia, "times new roman", times, serif;
+    font-weight: 100;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.51rem;
+    /*max-width: 760px;*/
+    font-family: georgia, "times new roman", times, serif;
+    font-weight: 300;
+    text-align: center;
+}
+
+.divider {
+    background: black;
+    opacity: .25;
+    /*max-width: 700px;*/
+    height: 1px;
+    margin: auto;
+}
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p {
+    font-family: "nyt-imperial", georgia, "times new roman", times, serif;
+    font-size: 1.25rem;
+    /*max-width: 600px;*/
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/*@media only screen and (max-width: 850px) {*/
+/*    .container{*/
+/*        width: 100% !important;*/
+/*    }*/
+/*    .main-canvas{*/
+/*        width: 100% !important;*/
+/*        background: blue;*/
+/*    }*/
+
+/*    #dom_overlay_container{*/
+/*        width: 100% !important;*/
+/*    }*/
+/*}*/
