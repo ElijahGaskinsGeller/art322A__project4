@@ -1,5 +1,3 @@
-
-
 function GetPageHeight() {
     return Math.max(document.body.scrollHeight, document.body.offsetHeight,
         document.documentElement.clientHeight, document.documentElement.scrollHeight,
@@ -33,20 +31,20 @@ function RectNormalPositionOnScreen(rectY, rectHeight, screenHeight) {
 
 }
 
-function RandomInt(max){
+function RandomInt(max) {
     let result = Math.round(Math.random() * max);
     return result;
 }
 
-function AddOnFrameEvent(object, frame, func){
+function AddOnFrameEvent(object, frame, func) {
     return object.timeline.addTween(createjs.Tween.get(object).wait(frame).call(func).wait(1));
 }
 
-function RemoveOnFrameEvent(object, tween){
+function RemoveOnFrameEvent(object, tween) {
     return object.timeline.removeTween(tween);
 }
 
-function page_init(lib){
+function page_init(lib) {
     console.log(lib);
 
     let _this = stage.children[0];
@@ -111,7 +109,6 @@ function page_init(lib){
     // let canvas = document.getElementById("canvas");
 
 
-
     function calcScrollEnd() {
         // return scrollStart - (page.nominalBounds.height) + (canvas.clientHeight) - (2 * padding);
     }
@@ -121,59 +118,50 @@ function page_init(lib){
     // let scrollStart = page.y + padding;
     // let scrollEnd = calcScrollEnd();
 
-    console.log("x: "+stage.scaleX);
-    console.log("y: "+canvas.clientWidth / canvas.clientHeight * window.devicePixelRatio * (lib.properties.height / lib.properties.width));
 
+    function onResize(e) {
+        var lastW, lastH, lastS = 1;
+        // window.addEventListener('resize', resizeCanvas);
+        // resizeCanvas();
+        // function resizeCanvas() {
 
-    console.log("page x: "+page.scaleX);
-    console.log("page y: "+page.scaleY);
+        let isResp = true;
+        let respDim = "height";
+        let isScale = true;
+        let scaleType = 1;
+        domContainers = [document.getElementById("canvas"), document.getElementById("animation_container"), document.getElementById("dom_overlay_container")];
 
-    console.log("page nb x: "+(page.scaleX * page.nominalBounds.width));
-    console.log("page nb y: "+(page.scaleY* page.nominalBounds.height));
-
-    function onResize(e){
-        let stageRatio = lib.properties.height / lib.properties.width;
-
-        stage.scaleY = canvas.clientWidth / canvas.clientHeight * window.devicePixelRatio * stageRatio;
-        // stage.scaleY *= .98;
-        // stage.scaleX *= .98;
-        console.log(stage.scaleY)
-        // stage.scaleX = 1;
-
-
-
-        // stage.scaleY = 1;
-        // stage.scaleX = 1;
-
-        stage.scaleY *= .95;
-        stage.scaleX *= .95;
-
-
-        if(window.innerWidth > window.innerHeight){
-
-
-        }else{
-
-
+        var w = lib.properties.width, h = lib.properties.height;
+        var iw = window.innerWidth, ih = window.innerHeight;
+        var pRatio = window.devicePixelRatio || 1, xRatio = iw / w, yRatio = ih / h, sRatio = 1;
+        if (isResp) {
+            if ((respDim == 'width' && lastW == iw) || (respDim == 'height' && lastH == ih)) {
+                sRatio = lastS;
+            } else if (!isScale) {
+                if (iw < w || ih < h)
+                    sRatio = Math.min(xRatio, yRatio);
+            } else if (scaleType == 1) {
+                sRatio = Math.min(xRatio, yRatio);
+                sRatio = yRatio;
+            } else if (scaleType == 2) {
+                sRatio = Math.max(xRatio, yRatio);
+            }
         }
-            // stage.scaleX = canvas.clientHeight / canvas.clientWidth * window.devicePixelRatio * stageRatio;
-        // stage.scaleX = canvas.clientHeight / canvas.clientWidth;
-
-        // testItem.x = canvas.clientWidth/(2 * window.devicePixelRatio * stageRatio);
-
-        // console.log("stageRatio: "+stageRatio);
-        // console.log("dpr: "+window.devicePixelRatio);
-        // console.log("width: "+canvas.clientWidth);
-        // console.log("x: "+testItem.x);
-
-        // scrollEnd = calcScrollEnd();
-        // onScroll(null);
-
-
-
+        domContainers[0].width = w * pRatio * sRatio;
+        domContainers[0].height = h * pRatio * sRatio;
+        domContainers.forEach(function (container) {
+            container.style.width = w * sRatio + 'px';
+            container.style.height = h * sRatio + 'px';
+        });
+        stage.scaleX = pRatio * sRatio;
+        stage.scaleY = pRatio * sRatio;
+        lastW = iw;
+        lastH = ih;
+        lastS = sRatio;
         stage.tickOnUpdate = false;
         stage.update();
         stage.tickOnUpdate = true;
+                
     }
 
     function onScroll(e) {
@@ -187,7 +175,18 @@ function page_init(lib){
 
     }
 
-    function update(t){
+    function update(t) {
+
+        window.scrollTo(Number.MAX_SAFE_INTEGER, Number.MAX_SAFE_INTEGER);
+
+
+        let scrollLimitX = window.scrollX;
+
+        let scrollLimitY = window.scrollY;
+
+        window.scrollTo(scrollLimitX/2, scrollLimitY/2);
+
+        // console.log(scrollX);
 
         // while(activeBalls.length < maxActiveBalls){
         //

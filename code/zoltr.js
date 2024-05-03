@@ -342,6 +342,13 @@ if (reversed == null) { reversed = false; }
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
 
+	// Layer_1
+	this.page = new lib.IntroAnim();
+	this.page.name = "page";
+	this.page.setTransform(677.55,383.95,1.9998,1.9998,0,0,0,192,192);
+
+	this.timeline.addTween(cjs.Tween.get(this.page).wait(1));
+
 	// Layer_2
 	this.shape = new cjs.Shape();
 	this.shape.graphics.f("rgba(255,0,255,0.996)").s().p("A4ZYaMAAAgwzMAwzAAAMAAAAwzg");
@@ -355,13 +362,6 @@ if (reversed == null) { reversed = false; }
 	this.shape_1.setTransform(514.725,737.225);
 
 	this.timeline.addTween(cjs.Tween.get(this.shape_1).wait(1));
-
-	// Layer_1
-	this.page = new lib.IntroAnim();
-	this.page.name = "page";
-	this.page.setTransform(677.55,383.95,1.9998,1.9998,0,0,0,192,192);
-
-	this.timeline.addTween(cjs.Tween.get(this.page).wait(1));
 
 	this._renderFirstFrame();
 
