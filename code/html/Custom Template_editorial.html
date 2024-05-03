@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<!--
+	NOTES:
+	1. All tokens are represented by '$' sign in the template.
+	2. You can write your code only wherever mentioned.
+	3. All occurrences of existing tokens will be replaced by their appropriate values.
+	4. Blank lines will be removed automatically.
+	5. Remove unnecessary comments before creating your template.
+-->
+
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="authoring-tool" content="$VERSION">
+<title>$TITLE</title>
+<!-- write your code here -->
+    $CENTER_STYLE
+    $CREATEJS_LIBRARY_SCRIPTS
+    $ANIMATE_CC_SCRIPTS
+    $SCRIPT_START
+    var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+    function init() {
+    canvas = document.getElementById("$CANVAS_ID");
+    anim_container = document.getElementById("$ANIM_CONTAINER_ID");
+    dom_overlay_container = document.getElementById("dom_overlay_container");
+    $CREATE_LOADER
+    $LOAD_MANIFEST
+    $PRELOAD_ASSETS
+    }
+    $HANDLE_FILE_LOAD_START
+    $HANDLE_FILE_LOAD_BODY
+    $HANDLE_FILE_LOAD_END
+    $HANDLE_COMPLETE_START
+    //This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+    $CREATE_STAGE
+    //Registers the "tick" event listener.
+    $START_ANIMATION
+    //Code to support hidpi screens and responsive scaling.
+    $RESP_HIDPI
+
+    console.log(this);
+    AdobeAn.compositionLoaded(lib.properties.id);
+    fnStartAnimation();
+    page_init(lib);
+    }
+    $PLAYSOUND
+    $SCRIPT_END
+<!-- write your code here -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body onload="init();" style="margin:0px;">
+
+<div class="head">
+<h1>What is Biodiversity and Why Does it <br>Matter to US?</h1>
+</div>
+
+<div class="divider"></div>
+
+<div class="text-container">
+
+<p>The air you breathe, the water you drink and the food you eat all rely on biodiversity, but
+right now it is in crisis – because of us. What does this mean for our future and can we
+	stop it?</p>
+
+<p>by Damian Carrington Environment editor.</p>
+
+<h2>What is biodiversity?</h2>
+
+<p>It is the variety of life on Earth, in all its forms and all its interactions. If that sounds
+bewilderingly broad, that’s because it is. Biodiversity is the most complex feature of our
+	planet and it is the most vital.</p>
+
+<p>The term was coined in 1985 – a contraction of “biological diversity” – but the huge
+global biodiversity losses now becoming apparent represent a crisis equaling – or quite
+possibly surpassing – climate change.</p>
+
+<p>More formally, biodiversity is comprised of several levels, starting with genes, then
+individual species, then communities of creatures and finally entire ecosystems, such as
+forests or coral reefs, where life interplays with the physical environment. These myriad
+	interactions have made Earth habitable for billions of years.</p>
+
+<p>A more philosophical way of viewing biodiversity is this: it represents the knowledge
+learned by evolving species over millions of years about how to survive through the
+vastly varying environmental conditions Earth has experienced. Seen like that, experts
+	warn, humanity is currently “burning the library of life”.</p>
+
+<p>Do animals and bugs really matter to me?</p>
+
+<p>For many people living in towns and cities, wildlife is often something you watch on
+television. But the reality is that the air you breathe, the water you drink and the food
+you eat all ultimately rely on biodiversity. Some examples are obvious: without plants
+	there would be no oxygen and without bees to pollinate there would be no fruit or nuts.</p>
+
+<p>Others are less obvious – coral reefs and mangrove swamps provide invaluable
+protection from cyclones and tsunamis for those living on coasts, while trees can absorb
+air pollution in urban areas.</p>
+
+<p>Others appear bizarre – tropical tortoises and spider monkeys seemingly have little to
+do with maintaining a stable climate. But the dense, hardwood trees that are most effective in removing carbon dioxide from the atmosphere rely on their seeds being
+    dispersed by these large fruit-eaters.</p>
+</div>
+
+
+<div id="$ANIM_CONTAINER_ID" class="container" style="width:$WTpx; height:100%;">
+    <canvas id="$CANVAS_ID" class="main-canvas" width="$WT" height="$HT" style="height: 100%; position: absolute; display: $CANVAS_DISP;"></canvas>
+    <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:$WTpx; height:$HTpx; position: absolute; left: 0px; top: 0px; display: $CANVAS_DISP;">
+    </div>
+</div>
+$PRELOADER_DIV
+
+
+
+<div class="text-container">
+
+    <p>When scientists explore each ecosystem, they find countless such interactions, all honed
+    by millions of years of evolution. If undamaged, this produces a finely balanced, healthy
+    system which contributes to a healthy sustainable planet.</p>
+
+    <p>The sheer richness of biodiversity also has human benefits. Many new medicines are
+    harvested from nature, such as a fungus that grows on the fur of sloths and can fight
+    cancer. Wild varieties of domesticated animals and crops are also crucial as some will
+    have already solved the challenge of, for example, coping with drought or salty soils.</p>
+
+    <p>If money is a measure, the services provided by ecosystems are estimated to be worth
+    trillions of dollars – double the world’s GDP. Biodiversity loss in Europe alone costs the
+    continent about 3% of its GDP, or €450m (£400m), a year.</p>
+
+    <p>From an aesthetic point of view, every one of the millions of species is unique, a natural
+    work of art that cannot be recreated once lost. “Each higher organism is richer in
+    information than a Caravaggio painting, a Bach fugue, or any other great work,” wrote
+    Prof Edward O Wilson, often called the “father of biodiversity”, in a seminal paper in
+        1985.</p>
+
+    <p>Just how diverse is biodiversity?</p>
+
+    <p>Mind-bogglingly diverse. The simplest aspect to consider is species. About 1.7 million
+    species of animals, plants and fungi have been recorded, but there are likely to be 8-9
+    million and possibly up to 100 million. The heartland of biodiversity is the tropics,
+    which teems with species. In 15 hectares (37 acres) of Borneo forest, for example, there
+    are 700 species of tree – the same number as the whole of
+        North America.</p>
+
+    <p>Recent work considering diversity at a genetic level has suggested that creatures thought
+    to be a single species could in some cases actually be dozens. Then add in bacteria and
+    viruses, and the number of distinct organisms may well be in the billions. A single
+    spoonful of soil – which ultimately provides 90% of all food – contains 10,000 to
+        50,000 different types of bacteria.</p>
+
+    <p>The concern is that many species are being lost before we are even aware of them, or the
+    role they play in the circle of life.</p>
+
+    <p>How bad is it?</p>
+
+    <p>Very. The best studied creatures are the ones like us – large mammals. Tiger numbers,
+    for example, have plunged by 97% in the last century. In many places, bigger animals
+        have already been wiped out by humans – think dodos or woolly mammoths.</p>
+
+
+</div>
+</body>
+
+<script src="js/script.js"></script>
+</html>
