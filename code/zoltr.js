@@ -3,7 +3,8 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"zoltr_atlas_1", frames: [[0,0,216,384],[218,0,216,384],[436,0,216,384],[654,0,216,384],[872,0,216,384],[1090,0,216,384],[1308,0,216,384],[1526,0,216,384],[1744,0,216,384],[0,386,216,384],[218,386,216,384],[436,386,216,384],[654,386,216,384],[872,386,216,384],[1090,386,216,384],[1308,386,216,384],[1526,386,216,384],[1744,386,216,384],[0,772,216,384],[218,772,216,384],[436,772,216,384],[654,772,216,384],[872,772,216,384],[1090,772,216,384],[1308,772,216,384],[1526,772,216,384],[1744,772,216,384],[0,1158,216,384],[218,1158,216,384],[436,1158,216,384]]}
+		{name:"zoltr_atlas_1", frames: [[0,0,384,384],[0,386,384,384],[0,772,384,384],[0,1158,384,384],[0,1544,384,384]]},
+		{name:"zoltr_atlas_2", frames: [[0,0,384,384],[0,386,384,384],[0,772,384,384],[0,1158,384,384],[0,1544,384,384],[386,0,384,384],[772,0,384,384],[1158,0,384,384],[1544,0,384,384],[386,386,384,384],[386,772,384,384],[386,1158,384,384],[386,1544,384,384],[772,386,384,384],[1158,386,384,384],[1544,386,384,384],[772,772,384,384],[772,1158,384,384],[772,1544,384,384],[1158,772,384,384],[1544,772,384,384],[1158,1158,384,384],[1158,1544,384,384],[1544,1158,384,384],[1544,1544,384,384]]}
 ];
 
 
@@ -28,175 +29,175 @@ lib.ssMetadata = [
 
 
 (lib._0001 = function() {
-	this.initialize(ss["zoltr_atlas_1"]);
+	this.initialize(ss["zoltr_atlas_2"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0002 = function() {
-	this.initialize(ss["zoltr_atlas_1"]);
+	this.initialize(ss["zoltr_atlas_2"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0003 = function() {
-	this.initialize(ss["zoltr_atlas_1"]);
+	this.initialize(ss["zoltr_atlas_2"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0004 = function() {
-	this.initialize(ss["zoltr_atlas_1"]);
+	this.initialize(ss["zoltr_atlas_2"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0005 = function() {
-	this.initialize(ss["zoltr_atlas_1"]);
+	this.initialize(ss["zoltr_atlas_2"]);
 	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0006 = function() {
-	this.initialize(ss["zoltr_atlas_1"]);
+	this.initialize(ss["zoltr_atlas_2"]);
 	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0007 = function() {
-	this.initialize(ss["zoltr_atlas_1"]);
+	this.initialize(ss["zoltr_atlas_2"]);
 	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0008 = function() {
-	this.initialize(ss["zoltr_atlas_1"]);
+	this.initialize(ss["zoltr_atlas_2"]);
 	this.gotoAndStop(7);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0009 = function() {
-	this.initialize(ss["zoltr_atlas_1"]);
+	this.initialize(ss["zoltr_atlas_2"]);
 	this.gotoAndStop(8);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0010 = function() {
-	this.initialize(ss["zoltr_atlas_1"]);
+	this.initialize(ss["zoltr_atlas_2"]);
 	this.gotoAndStop(9);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0011 = function() {
-	this.initialize(ss["zoltr_atlas_1"]);
+	this.initialize(ss["zoltr_atlas_2"]);
 	this.gotoAndStop(10);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0012 = function() {
-	this.initialize(ss["zoltr_atlas_1"]);
+	this.initialize(ss["zoltr_atlas_2"]);
 	this.gotoAndStop(11);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0013 = function() {
-	this.initialize(ss["zoltr_atlas_1"]);
+	this.initialize(ss["zoltr_atlas_2"]);
 	this.gotoAndStop(12);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0014 = function() {
-	this.initialize(ss["zoltr_atlas_1"]);
+	this.initialize(ss["zoltr_atlas_2"]);
 	this.gotoAndStop(13);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0015 = function() {
-	this.initialize(ss["zoltr_atlas_1"]);
+	this.initialize(ss["zoltr_atlas_2"]);
 	this.gotoAndStop(14);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0016 = function() {
-	this.initialize(ss["zoltr_atlas_1"]);
+	this.initialize(ss["zoltr_atlas_2"]);
 	this.gotoAndStop(15);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0017 = function() {
-	this.initialize(ss["zoltr_atlas_1"]);
+	this.initialize(ss["zoltr_atlas_2"]);
 	this.gotoAndStop(16);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0018 = function() {
-	this.initialize(ss["zoltr_atlas_1"]);
+	this.initialize(ss["zoltr_atlas_2"]);
 	this.gotoAndStop(17);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0019 = function() {
-	this.initialize(ss["zoltr_atlas_1"]);
+	this.initialize(ss["zoltr_atlas_2"]);
 	this.gotoAndStop(18);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0020 = function() {
-	this.initialize(ss["zoltr_atlas_1"]);
+	this.initialize(ss["zoltr_atlas_2"]);
 	this.gotoAndStop(19);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0021 = function() {
-	this.initialize(ss["zoltr_atlas_1"]);
+	this.initialize(ss["zoltr_atlas_2"]);
 	this.gotoAndStop(20);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0022 = function() {
-	this.initialize(ss["zoltr_atlas_1"]);
+	this.initialize(ss["zoltr_atlas_2"]);
 	this.gotoAndStop(21);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0023 = function() {
-	this.initialize(ss["zoltr_atlas_1"]);
+	this.initialize(ss["zoltr_atlas_2"]);
 	this.gotoAndStop(22);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0024 = function() {
-	this.initialize(ss["zoltr_atlas_1"]);
+	this.initialize(ss["zoltr_atlas_2"]);
 	this.gotoAndStop(23);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0025 = function() {
-	this.initialize(ss["zoltr_atlas_1"]);
+	this.initialize(ss["zoltr_atlas_2"]);
 	this.gotoAndStop(24);
 }).prototype = p = new cjs.Sprite();
 
@@ -204,35 +205,35 @@ lib.ssMetadata = [
 
 (lib._0026 = function() {
 	this.initialize(ss["zoltr_atlas_1"]);
-	this.gotoAndStop(25);
+	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0027 = function() {
 	this.initialize(ss["zoltr_atlas_1"]);
-	this.gotoAndStop(26);
+	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0028 = function() {
 	this.initialize(ss["zoltr_atlas_1"]);
-	this.gotoAndStop(27);
+	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0029 = function() {
 	this.initialize(ss["zoltr_atlas_1"]);
-	this.gotoAndStop(28);
+	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0030 = function() {
 	this.initialize(ss["zoltr_atlas_1"]);
-	this.gotoAndStop(29);
+	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 
 
@@ -327,7 +328,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(0,0,216,384);
+p.nominalBounds = new cjs.Rectangle(0,0,384,384);
 
 
 // stage content:
@@ -344,14 +345,14 @@ if (reversed == null) { reversed = false; }
 
 	// Layer_1
 	this.instance = new lib.IntroAnim();
-	this.instance.setTransform(510.45,383.95,1.9999,1.9999,0,0,0,108.1,192);
+	this.instance.setTransform(344.6,383.95,1.9999,1.9999,0,0,0,108.1,192);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(806.3,384,-80.09999999999991,384);
+p.nominalBounds = new cjs.Rectangle(640.4,384,256,384);
 // library properties:
 lib.properties = {
 	id: '668BAA9C462E5744A1D396D11B0943E7',
@@ -361,7 +362,8 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/zoltr_atlas_1.png", id:"zoltr_atlas_1"}
+		{src:"images/zoltr_atlas_1.png", id:"zoltr_atlas_1"},
+		{src:"images/zoltr_atlas_2.png", id:"zoltr_atlas_2"}
 	],
 	preloads: []
 };
