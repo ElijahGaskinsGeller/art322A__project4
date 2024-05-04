@@ -1,0 +1,22 @@
+
+
+
+0: character
+    a: figure out model or drawn
+    b: animate
+    c: replace existing frames
+
+1: intro animation
+    a: finish text system
+    b: intro prompt
+
+2: coin
+    a: prompt
+    b: click
+    c: insert
+
+3: ticket
+    a: pre-ticket text
+    b: pre-ticket animation
+    c: ticket animation
+    d: reset
