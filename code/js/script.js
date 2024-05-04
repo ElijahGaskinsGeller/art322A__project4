@@ -131,8 +131,9 @@ function page_init(lib) {
 
         stage.scaleX = stage.scaleY * stageRatio;
 
-        page.scaleX = (canvas.clientHeight) / canvas.clientWidth * window.devicePixelRatio * stageRatio;
+        page.scaleX = (canvas.clientHeight) / canvas.clientWidth * 1.5 * stageRatio;
 
+        console.log("dpr: "+window.devicePixelRatio);
         // stage.scaleX = 1;
 
         console.log(page.x);
