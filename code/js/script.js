@@ -122,6 +122,24 @@ function page_init(lib) {
 
 
     function onResize(e) {
+
+        // lib.properties.width = window.innerWidth;
+        // lib.properties.height = window.innerHeight;
+        //
+        // let stageRatio = lib.properties.height / lib.properties.width;
+        //
+        //
+        // stage.scaleY = canvas.clientWidth / canvas.clientHeight * window.devicePixelRatio * stageRatio;
+        //
+        // console.log("width: "+lib.properties.width);
+        // console.log("height: "+lib.properties.height);
+        // console.log("ratio: "+stageRatio);
+        // console.log("scale: "+stage.scaleY);
+        //
+        // stage.tickOnUpdate = false;
+        // stage.update();
+        // stage.tickOnUpdate = true;
+
         var lastW, lastH, lastS = 1;
         // window.addEventListener('resize', resizeCanvas);
         // resizeCanvas();
@@ -164,7 +182,7 @@ function page_init(lib) {
         stage.update();
         stage.tickOnUpdate = true;
 
-        // console.log(document.body.scroll);
+        console.log(document.body.scroll);
 
     }
 

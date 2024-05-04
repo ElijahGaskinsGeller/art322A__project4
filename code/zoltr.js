@@ -345,7 +345,7 @@ if (reversed == null) { reversed = false; }
 	// Layer_1
 	this.page = new lib.IntroAnim();
 	this.page.name = "page";
-	this.page.setTransform(677.55,383.95,1.9998,1.9998,0,0,0,192,192);
+	this.page.setTransform(518,383.95,1.9998,1.9998,0,0,0,112.2,192);
 
 	this.timeline.addTween(cjs.Tween.get(this.page).wait(1));
 
