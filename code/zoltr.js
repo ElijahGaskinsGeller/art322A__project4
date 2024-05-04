@@ -345,14 +345,14 @@ if (reversed == null) { reversed = false; }
 	// Layer_1
 	this.page = new lib.IntroAnim();
 	this.page.name = "page";
-	this.page.setTransform(512,0,2.0001,2,0,0,0,108,0);
+	this.page.setTransform(216,0,2.0001,2,0,0,0,108,0);
 
 	this.timeline.addTween(cjs.Tween.get(this.page).wait(1));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(808,384,-80,384);
+p.nominalBounds = new cjs.Rectangle(512,384,-80,384);
 // library properties:
 lib.properties = {
 	id: '668BAA9C462E5744A1D396D11B0943E7',
