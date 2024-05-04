@@ -58,8 +58,6 @@ function page_init(lib) {
     console.log(page.text);
 
 
-
-
     function onResize(e) {
 
         let stageRatio = lib.properties.width / lib.properties.height;
@@ -79,7 +77,7 @@ function page_init(lib) {
         // console.log(window.innerWidth)
 
 
-        page.x = lib.properties.width/2 / stageRatio;
+        page.x = lib.properties.width / 2 / stageRatio;
 
 
         stage.tickOnUpdate = false;
@@ -106,30 +104,45 @@ function page_init(lib) {
     let timer = 0;
     let textTime = .1;
 
+    let blinkTimer = 0;
+    let blinkTime = .5;
+    let blinkOn = false;
+
     text.text = "";
 
     let lastTime = 0;
 
     function update(t) {
 
-        let deltaTime = (t-lastTime)/1000;
+        let deltaTime = (t - lastTime) / 1000;
         lastTime = t;
 
-        text.text = fullText.slice(0, textIndex) + "_";
+        text.text = fullText.slice(0, textIndex) + ((blinkOn) ? "" : "_");
 
-        if(timer >= textTime){
-            textIndex++;
-            timer = 0;
+
+        if (text.text.length < fullText.length) {
+            if (timer >= textTime) {
+                textIndex++;
+                timer = 0;
+            } else {
+                timer += deltaTime;
+            }
+
         }else{
-            timer += deltaTime;
+            if (blinkTimer >= blinkTime) {
+                blinkOn = !blinkOn;
+                blinkTimer = 0;
+            } else {
+                blinkTimer += deltaTime;
+            }
         }
 
 
         requestAnimationFrame(update);
     }
 
-    window.addEventListener("click", function (e){
-        console.log("x pos: "+stage.mouseX);
+    window.addEventListener("click", function (e) {
+        console.log("x pos: " + stage.mouseX);
     });
 
     onScroll(null);
