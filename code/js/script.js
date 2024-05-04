@@ -123,6 +123,33 @@ function page_init(lib) {
 
     function onResize(e) {
 
+        let stageRatio = lib.properties.height / lib.properties.width;
+
+        stage.scaleY = canvas.clientWidth / (canvas.clientHeight * window.devicePixelRatio * stageRatio);
+
+        // let newScale = (canvas.clientHeight/lib.properties.height)/stage.scaleY;
+        let newScale = (canvas.clientHeight/canvas.clientWidth) * 2.34;
+
+        page.scaleY = newScale;
+        page.scaleX = newScale;
+
+        console.log("current scale: " + page.scaleY);
+        console.log("current target: " + page.nominalBounds.height * page.scaleY);
+
+        console.log("sr: "+stageRatio);
+        console.log("nb: "+page.nominalBounds);
+        console.log("lib height: "+ lib.properties.height);
+        console.log("ih: "+window.innerHeight)
+        console.log("can h: "+canvas.height);
+
+        console.log("cli wid: "+canvas.clientWidth);
+        console.log("cli height: "+canvas.clientHeight);
+        console.log("stage scaleY: "+stage.scaleY);
+
+        stage.tickOnUpdate = false;
+        stage.update();
+        stage.tickOnUpdate = true;
+
         // lib.properties.width = window.innerWidth;
         // lib.properties.height = window.innerHeight;
         //
