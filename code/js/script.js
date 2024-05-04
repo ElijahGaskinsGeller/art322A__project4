@@ -50,6 +50,8 @@ function page_init(lib) {
     let _this = stage.children[0];
 
     let page = _this.page;
+
+    console.log(stage.mouseX);
     // console.log(page.nominalBounds);
 
     // document.body.style.overflow = "hidden";
@@ -125,7 +127,29 @@ function page_init(lib) {
 
         let stageRatio = lib.properties.width / lib.properties.height;
 
-        stage.scaleX = (canvas.clientHeight* window.devicePixelRatio * stageRatio) / canvas.clientWidth;
+        // stage.scaleX = (canvas.clientHeight* window.devicePixelRatio * stageRatio) / canvas.clientWidth;
+
+        stage.scaleX = stage.scaleY * stageRatio;
+
+        page.scaleX = (canvas.clientHeight) / canvas.clientWidth * window.devicePixelRatio * stageRatio;
+
+        // stage.scaleX = 1;
+
+        console.log(page.x);
+        console.log(page.nominalBounds.width*page.scaleX);
+        console.log("sx: "+stage.scaleX);
+        console.log(lib.properties.width);
+        console.log(lib.properties.width*stage.scaleX);
+        console.log(window.innerWidth)
+
+
+        // console.log("stage scaled: "+stage.canvas.width);
+
+        // console.log(stage)
+
+        // page.x = 0;
+        // page.x = (window.innerWidth/2) - page.nominalBounds.width*stageRatio;
+        page.x = lib.properties.width/2 / stageRatio;
         // stage.scaleY = canvas.clientWidth / (canvas.clientHeight * window.devicePixelRatio * stageRatio);
 
         // let newScale = (canvas.clientHeight/lib.properties.height)/stage.scaleY;
@@ -134,18 +158,6 @@ function page_init(lib) {
         // page.scaleY = newScale;
         // page.scaleX = newScale;
 
-        console.log("current scale: " + page.scaleY);
-        console.log("current target: " + page.nominalBounds.height * page.scaleY);
-
-        console.log("sr: "+stageRatio);
-        console.log("nb: "+page.nominalBounds);
-        console.log("lib height: "+ lib.properties.height);
-        console.log("ih: "+window.innerHeight)
-        console.log("can h: "+canvas.height);
-
-        console.log("cli wid: "+canvas.clientWidth);
-        console.log("cli height: "+canvas.clientHeight);
-        console.log("stage scaleY: "+stage.scaleY);
 
         stage.tickOnUpdate = false;
         stage.update();
@@ -351,6 +363,9 @@ function page_init(lib) {
 
     window.addEventListener("resize", onResize);
     window.addEventListener("scroll", onScroll);
+    window.addEventListener("click", function (e){
+        console.log("x pos: "+stage.mouseX);
+    });
     requestAnimationFrame(update);
 
 }

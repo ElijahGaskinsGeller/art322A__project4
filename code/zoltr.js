@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"zoltr_atlas_1", frames: [[0,0,216,384],[218,0,216,384],[436,0,216,384],[654,0,216,384],[872,0,216,384],[1090,0,216,384],[1308,0,216,384],[1526,0,216,384],[1744,0,216,384],[0,386,216,384],[218,386,216,384],[436,386,216,384],[654,386,216,384],[872,386,216,384],[1090,386,216,384],[1308,386,216,384],[1526,386,216,384],[1744,386,216,384],[0,772,216,384],[218,772,216,384],[436,772,216,384],[654,772,216,384],[872,772,216,384],[1090,772,216,384],[1308,772,216,384],[1526,772,216,384],[1744,772,216,384],[0,1158,216,384],[218,1158,216,384],[436,1158,216,384]]}
+		{name:"zoltr_atlas_1", frames: [[654,1158,351,70],[0,0,216,384],[218,0,216,384],[436,0,216,384],[654,0,216,384],[872,0,216,384],[1090,0,216,384],[1308,0,216,384],[1526,0,216,384],[1744,0,216,384],[0,386,216,384],[218,386,216,384],[436,386,216,384],[654,386,216,384],[872,386,216,384],[1090,386,216,384],[1308,386,216,384],[1526,386,216,384],[1744,386,216,384],[0,772,216,384],[218,772,216,384],[436,772,216,384],[654,772,216,384],[872,772,216,384],[1090,772,216,384],[1308,772,216,384],[1526,772,216,384],[1744,772,216,384],[0,1158,216,384],[218,1158,216,384],[436,1158,216,384]]}
 ];
 
 
@@ -27,212 +27,219 @@ lib.ssMetadata = [
 
 
 
-(lib._0001 = function() {
+(lib.CachedBmp_1 = function() {
 	this.initialize(ss["zoltr_atlas_1"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib._0002 = function() {
+(lib._0001 = function() {
 	this.initialize(ss["zoltr_atlas_1"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib._0003 = function() {
+(lib._0002 = function() {
 	this.initialize(ss["zoltr_atlas_1"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib._0004 = function() {
+(lib._0003 = function() {
 	this.initialize(ss["zoltr_atlas_1"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib._0005 = function() {
+(lib._0004 = function() {
 	this.initialize(ss["zoltr_atlas_1"]);
 	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib._0006 = function() {
+(lib._0005 = function() {
 	this.initialize(ss["zoltr_atlas_1"]);
 	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib._0007 = function() {
+(lib._0006 = function() {
 	this.initialize(ss["zoltr_atlas_1"]);
 	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib._0008 = function() {
+(lib._0007 = function() {
 	this.initialize(ss["zoltr_atlas_1"]);
 	this.gotoAndStop(7);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib._0009 = function() {
+(lib._0008 = function() {
 	this.initialize(ss["zoltr_atlas_1"]);
 	this.gotoAndStop(8);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib._0010 = function() {
+(lib._0009 = function() {
 	this.initialize(ss["zoltr_atlas_1"]);
 	this.gotoAndStop(9);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib._0011 = function() {
+(lib._0010 = function() {
 	this.initialize(ss["zoltr_atlas_1"]);
 	this.gotoAndStop(10);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib._0012 = function() {
+(lib._0011 = function() {
 	this.initialize(ss["zoltr_atlas_1"]);
 	this.gotoAndStop(11);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib._0013 = function() {
+(lib._0012 = function() {
 	this.initialize(ss["zoltr_atlas_1"]);
 	this.gotoAndStop(12);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib._0014 = function() {
+(lib._0013 = function() {
 	this.initialize(ss["zoltr_atlas_1"]);
 	this.gotoAndStop(13);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib._0015 = function() {
+(lib._0014 = function() {
 	this.initialize(ss["zoltr_atlas_1"]);
 	this.gotoAndStop(14);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib._0016 = function() {
+(lib._0015 = function() {
 	this.initialize(ss["zoltr_atlas_1"]);
 	this.gotoAndStop(15);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib._0017 = function() {
+(lib._0016 = function() {
 	this.initialize(ss["zoltr_atlas_1"]);
 	this.gotoAndStop(16);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib._0018 = function() {
+(lib._0017 = function() {
 	this.initialize(ss["zoltr_atlas_1"]);
 	this.gotoAndStop(17);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib._0019 = function() {
+(lib._0018 = function() {
 	this.initialize(ss["zoltr_atlas_1"]);
 	this.gotoAndStop(18);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib._0020 = function() {
+(lib._0019 = function() {
 	this.initialize(ss["zoltr_atlas_1"]);
 	this.gotoAndStop(19);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib._0021 = function() {
+(lib._0020 = function() {
 	this.initialize(ss["zoltr_atlas_1"]);
 	this.gotoAndStop(20);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib._0022 = function() {
+(lib._0021 = function() {
 	this.initialize(ss["zoltr_atlas_1"]);
 	this.gotoAndStop(21);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib._0023 = function() {
+(lib._0022 = function() {
 	this.initialize(ss["zoltr_atlas_1"]);
 	this.gotoAndStop(22);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib._0024 = function() {
+(lib._0023 = function() {
 	this.initialize(ss["zoltr_atlas_1"]);
 	this.gotoAndStop(23);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib._0025 = function() {
+(lib._0024 = function() {
 	this.initialize(ss["zoltr_atlas_1"]);
 	this.gotoAndStop(24);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib._0026 = function() {
+(lib._0025 = function() {
 	this.initialize(ss["zoltr_atlas_1"]);
 	this.gotoAndStop(25);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib._0027 = function() {
+(lib._0026 = function() {
 	this.initialize(ss["zoltr_atlas_1"]);
 	this.gotoAndStop(26);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib._0028 = function() {
+(lib._0027 = function() {
 	this.initialize(ss["zoltr_atlas_1"]);
 	this.gotoAndStop(27);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib._0029 = function() {
+(lib._0028 = function() {
 	this.initialize(ss["zoltr_atlas_1"]);
 	this.gotoAndStop(28);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib._0030 = function() {
+(lib._0029 = function() {
 	this.initialize(ss["zoltr_atlas_1"]);
 	this.gotoAndStop(29);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib._0030 = function() {
+	this.initialize(ss["zoltr_atlas_1"]);
+	this.gotoAndStop(30);
 }).prototype = p = new cjs.Sprite();
 
 
@@ -261,68 +268,81 @@ if (reversed == null) { reversed = false; }
 	// actions tween:
 	this.timeline.addTween(cjs.Tween.get(this).wait(29).call(this.frame_29).wait(1));
 
+	// Layer_3
+	this.instance = new lib.CachedBmp_1();
+	this.instance.setTransform(82.65,84.35,0.25,0.25);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(30));
+
+	// Layer_2
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("rgba(255,0,255,0.996)").s().p("AqRKSIAA0jIUjAAIAAUjg");
+	this.shape.setTransform(108.175,183.725);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(30));
+
 	// Layer_1
-	this.instance = new lib._0001();
+	this.instance_1 = new lib._0001();
 
-	this.instance_1 = new lib._0002();
+	this.instance_2 = new lib._0002();
 
-	this.instance_2 = new lib._0003();
+	this.instance_3 = new lib._0003();
 
-	this.instance_3 = new lib._0004();
+	this.instance_4 = new lib._0004();
 
-	this.instance_4 = new lib._0005();
+	this.instance_5 = new lib._0005();
 
-	this.instance_5 = new lib._0006();
+	this.instance_6 = new lib._0006();
 
-	this.instance_6 = new lib._0007();
+	this.instance_7 = new lib._0007();
 
-	this.instance_7 = new lib._0008();
+	this.instance_8 = new lib._0008();
 
-	this.instance_8 = new lib._0009();
+	this.instance_9 = new lib._0009();
 
-	this.instance_9 = new lib._0010();
+	this.instance_10 = new lib._0010();
 
-	this.instance_10 = new lib._0011();
+	this.instance_11 = new lib._0011();
 
-	this.instance_11 = new lib._0012();
+	this.instance_12 = new lib._0012();
 
-	this.instance_12 = new lib._0013();
+	this.instance_13 = new lib._0013();
 
-	this.instance_13 = new lib._0014();
+	this.instance_14 = new lib._0014();
 
-	this.instance_14 = new lib._0015();
+	this.instance_15 = new lib._0015();
 
-	this.instance_15 = new lib._0016();
+	this.instance_16 = new lib._0016();
 
-	this.instance_16 = new lib._0017();
+	this.instance_17 = new lib._0017();
 
-	this.instance_17 = new lib._0018();
+	this.instance_18 = new lib._0018();
 
-	this.instance_18 = new lib._0019();
+	this.instance_19 = new lib._0019();
 
-	this.instance_19 = new lib._0020();
+	this.instance_20 = new lib._0020();
 
-	this.instance_20 = new lib._0021();
+	this.instance_21 = new lib._0021();
 
-	this.instance_21 = new lib._0022();
+	this.instance_22 = new lib._0022();
 
-	this.instance_22 = new lib._0023();
+	this.instance_23 = new lib._0023();
 
-	this.instance_23 = new lib._0024();
+	this.instance_24 = new lib._0024();
 
-	this.instance_24 = new lib._0025();
+	this.instance_25 = new lib._0025();
 
-	this.instance_25 = new lib._0026();
+	this.instance_26 = new lib._0026();
 
-	this.instance_26 = new lib._0027();
+	this.instance_27 = new lib._0027();
 
-	this.instance_27 = new lib._0028();
+	this.instance_28 = new lib._0028();
 
-	this.instance_28 = new lib._0029();
+	this.instance_29 = new lib._0029();
 
-	this.instance_29 = new lib._0030();
+	this.instance_30 = new lib._0030();
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_2}]},1).to({state:[{t:this.instance_3}]},1).to({state:[{t:this.instance_4}]},1).to({state:[{t:this.instance_5}]},1).to({state:[{t:this.instance_6}]},1).to({state:[{t:this.instance_7}]},1).to({state:[{t:this.instance_8}]},1).to({state:[{t:this.instance_9}]},1).to({state:[{t:this.instance_10}]},1).to({state:[{t:this.instance_11}]},1).to({state:[{t:this.instance_12}]},1).to({state:[{t:this.instance_13}]},1).to({state:[{t:this.instance_14}]},1).to({state:[{t:this.instance_15}]},1).to({state:[{t:this.instance_16}]},1).to({state:[{t:this.instance_17}]},1).to({state:[{t:this.instance_18}]},1).to({state:[{t:this.instance_19}]},1).to({state:[{t:this.instance_20}]},1).to({state:[{t:this.instance_21}]},1).to({state:[{t:this.instance_22}]},1).to({state:[{t:this.instance_23}]},1).to({state:[{t:this.instance_24}]},1).to({state:[{t:this.instance_25}]},1).to({state:[{t:this.instance_26}]},1).to({state:[{t:this.instance_27}]},1).to({state:[{t:this.instance_28}]},1).to({state:[{t:this.instance_29}]},1).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1}]}).to({state:[{t:this.instance_2}]},1).to({state:[{t:this.instance_3}]},1).to({state:[{t:this.instance_4}]},1).to({state:[{t:this.instance_5}]},1).to({state:[{t:this.instance_6}]},1).to({state:[{t:this.instance_7}]},1).to({state:[{t:this.instance_8}]},1).to({state:[{t:this.instance_9}]},1).to({state:[{t:this.instance_10}]},1).to({state:[{t:this.instance_11}]},1).to({state:[{t:this.instance_12}]},1).to({state:[{t:this.instance_13}]},1).to({state:[{t:this.instance_14}]},1).to({state:[{t:this.instance_15}]},1).to({state:[{t:this.instance_16}]},1).to({state:[{t:this.instance_17}]},1).to({state:[{t:this.instance_18}]},1).to({state:[{t:this.instance_19}]},1).to({state:[{t:this.instance_20}]},1).to({state:[{t:this.instance_21}]},1).to({state:[{t:this.instance_22}]},1).to({state:[{t:this.instance_23}]},1).to({state:[{t:this.instance_24}]},1).to({state:[{t:this.instance_25}]},1).to({state:[{t:this.instance_26}]},1).to({state:[{t:this.instance_27}]},1).to({state:[{t:this.instance_28}]},1).to({state:[{t:this.instance_29}]},1).to({state:[{t:this.instance_30}]},1).wait(1));
 
 	this._renderFirstFrame();
 
