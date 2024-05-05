@@ -112,6 +112,11 @@ function page_init(lib) {
 
     let lastTime = 0;
 
+
+    page.coin.button.addEventListener("click", function(e){
+        console.log("here");
+        page.coin.gotoAndStop(1);
+    })
     function update(t) {
 
         let deltaTime = (t - lastTime) / 1000;

@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"zoltr_atlas_1", frames: [[0,0,216,384],[0,386,216,384],[218,0,216,384],[218,386,216,384],[436,0,216,384]]},
+		{name:"zoltr_atlas_1", frames: [[0,0,216,384],[218,0,216,384],[436,0,216,384],[654,0,216,384],[872,0,216,384],[1090,0,216,384],[1308,0,216,384],[1526,0,216,384],[1744,0,216,384],[0,386,216,384],[218,386,216,384],[436,386,216,384],[654,386,216,384],[872,386,216,384],[1090,386,216,384],[1308,386,216,384],[1526,386,216,384],[1744,386,216,384],[0,772,216,384],[218,772,216,384],[436,772,216,384],[654,772,216,384],[872,772,216,384],[1090,772,216,384],[1308,772,216,384],[1526,772,216,384],[1744,772,216,384],[0,1158,216,384],[218,1158,216,384],[436,1158,216,384],[654,1158,216,384],[872,1158,216,384],[1090,1158,216,384],[1308,1158,216,384],[1526,1158,216,384]]},
 		{name:"zoltr_atlas_2", frames: [[0,0,216,384],[0,386,216,384],[0,772,216,384],[0,1158,216,384],[0,1544,216,384],[218,0,216,384],[218,386,216,384],[218,772,216,384],[218,1158,216,384],[218,1544,216,384],[436,0,216,384],[654,0,216,384],[872,0,216,384],[1090,0,216,384],[1308,0,216,384],[1526,0,216,384],[1744,0,216,384],[436,386,216,384],[436,772,216,384],[436,1158,216,384],[436,1544,216,384],[654,386,216,384],[654,772,216,384],[654,1158,216,384],[654,1544,216,384],[872,386,216,384],[1090,386,216,384],[1308,386,216,384],[1526,386,216,384],[1744,386,216,384],[872,772,216,384],[872,1158,216,384],[872,1544,216,384],[1090,772,216,384],[1090,1158,216,384],[1090,1544,216,384],[1308,772,216,384],[1526,772,216,384],[1744,772,216,384],[1308,1158,216,384],[1308,1544,216,384],[1526,1158,216,384],[1744,1158,216,384],[1526,1544,216,384],[1744,1544,216,384]]}
 ];
 
@@ -378,6 +378,430 @@ lib.ssMetadata = [
 
 
 
+(lib._0061 = function() {
+	this.initialize(ss["zoltr_atlas_1"]);
+	this.gotoAndStop(5);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib._0062 = function() {
+	this.initialize(ss["zoltr_atlas_1"]);
+	this.gotoAndStop(6);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib._0063 = function() {
+	this.initialize(ss["zoltr_atlas_1"]);
+	this.gotoAndStop(7);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib._0064 = function() {
+	this.initialize(ss["zoltr_atlas_1"]);
+	this.gotoAndStop(8);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib._0065 = function() {
+	this.initialize(ss["zoltr_atlas_1"]);
+	this.gotoAndStop(9);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib._0066 = function() {
+	this.initialize(ss["zoltr_atlas_1"]);
+	this.gotoAndStop(10);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib._0067 = function() {
+	this.initialize(ss["zoltr_atlas_1"]);
+	this.gotoAndStop(11);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib._0068 = function() {
+	this.initialize(ss["zoltr_atlas_1"]);
+	this.gotoAndStop(12);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib._0069 = function() {
+	this.initialize(ss["zoltr_atlas_1"]);
+	this.gotoAndStop(13);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib._0070 = function() {
+	this.initialize(ss["zoltr_atlas_1"]);
+	this.gotoAndStop(14);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib._0081 = function() {
+	this.initialize(ss["zoltr_atlas_1"]);
+	this.gotoAndStop(15);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib._0082 = function() {
+	this.initialize(ss["zoltr_atlas_1"]);
+	this.gotoAndStop(16);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib._0083 = function() {
+	this.initialize(ss["zoltr_atlas_1"]);
+	this.gotoAndStop(17);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib._0084 = function() {
+	this.initialize(ss["zoltr_atlas_1"]);
+	this.gotoAndStop(18);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib._0085 = function() {
+	this.initialize(ss["zoltr_atlas_1"]);
+	this.gotoAndStop(19);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib._0086 = function() {
+	this.initialize(ss["zoltr_atlas_1"]);
+	this.gotoAndStop(20);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib._0087 = function() {
+	this.initialize(ss["zoltr_atlas_1"]);
+	this.gotoAndStop(21);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib._0088 = function() {
+	this.initialize(ss["zoltr_atlas_1"]);
+	this.gotoAndStop(22);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib._0089 = function() {
+	this.initialize(ss["zoltr_atlas_1"]);
+	this.gotoAndStop(23);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib._0090 = function() {
+	this.initialize(ss["zoltr_atlas_1"]);
+	this.gotoAndStop(24);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib._0091 = function() {
+	this.initialize(ss["zoltr_atlas_1"]);
+	this.gotoAndStop(25);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib._0092 = function() {
+	this.initialize(ss["zoltr_atlas_1"]);
+	this.gotoAndStop(26);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib._0093 = function() {
+	this.initialize(ss["zoltr_atlas_1"]);
+	this.gotoAndStop(27);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib._0094 = function() {
+	this.initialize(ss["zoltr_atlas_1"]);
+	this.gotoAndStop(28);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib._0095 = function() {
+	this.initialize(ss["zoltr_atlas_1"]);
+	this.gotoAndStop(29);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib._0096 = function() {
+	this.initialize(ss["zoltr_atlas_1"]);
+	this.gotoAndStop(30);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib._0097 = function() {
+	this.initialize(ss["zoltr_atlas_1"]);
+	this.gotoAndStop(31);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib._0098 = function() {
+	this.initialize(ss["zoltr_atlas_1"]);
+	this.gotoAndStop(32);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib._0099 = function() {
+	this.initialize(ss["zoltr_atlas_1"]);
+	this.gotoAndStop(33);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib._0100 = function() {
+	this.initialize(ss["zoltr_atlas_1"]);
+	this.gotoAndStop(34);
+}).prototype = p = new cjs.Sprite();
+// helper functions:
+
+function mc_symbol_clone() {
+	var clone = this._cloneProps(new this.constructor(this.mode, this.startPosition, this.loop, this.reversed));
+	clone.gotoAndStop(this.currentFrame);
+	clone.paused = this.paused;
+	clone.framerate = this.framerate;
+	return clone;
+}
+
+function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
+	var prototype = cjs.extend(symbol, cjs.MovieClip);
+	prototype.clone = mc_symbol_clone;
+	prototype.nominalBounds = nominalBounds;
+	prototype.frameBounds = frameBounds;
+	return prototype;
+	}
+
+
+(lib.InsertCoin = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// timeline functions:
+	this.frame_19 = function() {
+		var _this = this;
+		/*
+		Stop a Movie Clip/Video
+		Stops the specified movie clip or video.
+		*/
+		_this.stop();
+	}
+
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).wait(19).call(this.frame_19).wait(1));
+
+	// Layer_1
+	this.instance = new lib._0081();
+
+	this.instance_1 = new lib._0082();
+
+	this.instance_2 = new lib._0083();
+
+	this.instance_3 = new lib._0084();
+
+	this.instance_4 = new lib._0085();
+
+	this.instance_5 = new lib._0086();
+
+	this.instance_6 = new lib._0087();
+
+	this.instance_7 = new lib._0088();
+
+	this.instance_8 = new lib._0089();
+
+	this.instance_9 = new lib._0090();
+
+	this.instance_10 = new lib._0091();
+
+	this.instance_11 = new lib._0092();
+
+	this.instance_12 = new lib._0093();
+
+	this.instance_13 = new lib._0094();
+
+	this.instance_14 = new lib._0095();
+
+	this.instance_15 = new lib._0096();
+
+	this.instance_16 = new lib._0097();
+
+	this.instance_17 = new lib._0098();
+
+	this.instance_18 = new lib._0099();
+
+	this.instance_19 = new lib._0100();
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_2}]},1).to({state:[{t:this.instance_3}]},1).to({state:[{t:this.instance_4}]},1).to({state:[{t:this.instance_5}]},1).to({state:[{t:this.instance_6}]},1).to({state:[{t:this.instance_7}]},1).to({state:[{t:this.instance_8}]},1).to({state:[{t:this.instance_9}]},1).to({state:[{t:this.instance_10}]},1).to({state:[{t:this.instance_11}]},1).to({state:[{t:this.instance_12}]},1).to({state:[{t:this.instance_13}]},1).to({state:[{t:this.instance_14}]},1).to({state:[{t:this.instance_15}]},1).to({state:[{t:this.instance_16}]},1).to({state:[{t:this.instance_17}]},1).to({state:[{t:this.instance_18}]},1).to({state:[{t:this.instance_19}]},1).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,216,384);
+
+
+(lib.CoinLoop = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Layer_1
+	this.instance = new lib._0070();
+
+	this.instance_1 = new lib._0061();
+
+	this.instance_2 = new lib._0062();
+
+	this.instance_3 = new lib._0063();
+
+	this.instance_4 = new lib._0064();
+
+	this.instance_5 = new lib._0065();
+
+	this.instance_6 = new lib._0066();
+
+	this.instance_7 = new lib._0067();
+
+	this.instance_8 = new lib._0068();
+
+	this.instance_9 = new lib._0069();
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},21).to({state:[{t:this.instance_2}]},2).to({state:[{t:this.instance_3}]},2).to({state:[{t:this.instance_4}]},2).to({state:[{t:this.instance_5}]},2).to({state:[{t:this.instance_6}]},2).to({state:[{t:this.instance_7}]},2).to({state:[{t:this.instance_8}]},2).to({state:[{t:this.instance_9}]},2).to({state:[{t:this.instance}]},2).wait(19));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,216,384);
+
+
+(lib.Button = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Layer_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("rgba(255,0,255,0.008)").s().p("AkCEDIAAoFIIFAAIAAIFg");
+	this.shape.setTransform(25.9,25.9);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = getMCSymbolPrototype(lib.Button, new cjs.Rectangle(0,0,51.8,51.8), null);
+
+
+(lib.CoinAnim = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// timeline functions:
+	this.frame_0 = function() {
+		//var _this = this;
+		/*
+		Clicking on the specified symbol instance executes a function.
+		*/
+		//console.log("pre-click");
+		
+		//_this.button.on('click', function(){
+		/*
+		Moves the playhead to the specified frame number in the timeline and stops the movie.
+		Can be used on the main timeline or on movie clip timelines.
+		*/
+		//_this.gotoAndStop(2);
+		//});
+		var _this = this;
+		/*
+		Stop a Movie Clip/Video
+		Stops the specified movie clip or video.
+		*/
+		
+		console.log("pre-stop");
+		
+		_this.stop();
+	}
+
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(2));
+
+	// Layer_2
+	this.button = new lib.Button();
+	this.button.name = "button";
+	this.button.setTransform(186.85,108.7,1,1,0,0,0,25.9,25.9);
+
+	this.timeline.addTween(cjs.Tween.get(this.button).to({_off:true},1).wait(1));
+
+	// Layer_1
+	this.instance = new lib.CoinLoop();
+	this.instance.setTransform(108,192,1,1,0,0,0,108,192);
+
+	this.instance_1 = new lib.InsertCoin();
+	this.instance_1.setTransform(108,192,1,1,0,0,0,108,192);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,216,384);
+
+
 (lib.IntroAnim = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
@@ -412,6 +836,13 @@ if (reversed == null) { reversed = false; }
 	this.text.setTransform(84.7,92.85);
 
 	this.timeline.addTween(cjs.Tween.get(this.text).wait(50));
+
+	// Layer_4
+	this.coin = new lib.CoinAnim();
+	this.coin.name = "coin";
+	this.coin.setTransform(108,192,1,1,0,0,0,108,192);
+
+	this.timeline.addTween(cjs.Tween.get(this.coin).wait(50));
 
 	// Layer_1
 	this.instance = new lib._0001();

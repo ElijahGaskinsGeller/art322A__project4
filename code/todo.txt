@@ -12,8 +12,10 @@
 
 2: coin
     a: prompt
+        f60-f70
     b: click
     c: insert
+        f80-f100
 
 3: ticket
     a: pre-ticket text
