@@ -51,9 +51,38 @@ function page_init(lib) {
 
     let page = _this.page;
 
-    let text = page.text;
+    // let text = page.text;
 
-    console.log(stage.mouseX);
+    let textBox = page.text_box;
+    let writeToText = false;
+
+    let coin = page.coin;
+
+    coin.gotoAndStop(0);
+
+    console.log(textBox);
+
+    textBox.gotoAndStop(0);
+
+
+    page.timeline.addTween(createjs.Tween.get(page).wait(page.totalFrames - 1).call(function (e) {
+        textBox.gotoAndPlay(0);
+    }).wait(1));
+
+    textBox.timeline.addTween(createjs.Tween.get(textBox).wait(textBox.timeline._labels.midpoint).call(function (e) {
+        textBox.stop();
+        coin.gotoAndStop(1);
+        writeToText = true;
+    }).wait(1));
+
+    textBox.timeline.addTween(createjs.Tween.get(textBox).wait(textBox.totalFrames - 1).call(function (e) {
+        textBox.stop();
+        textBox.text_box.text.text = "";
+        writeToText = false;
+    }).wait(1));
+
+
+    // console.log(stage.mouseX);
 
     console.log(page.text);
 
@@ -98,47 +127,92 @@ function page_init(lib) {
     }
 
 
-    let fullText = text.text;
+    let fullText = "Insert a coin to receive your |t̷̼̭͐̀ȩ̵́c̷̥̫͂̆h̷̞̺͑͝n̶̰̯͆͐o̷̹͝l̸͙̀o̴̰͐g̴͇̹̈î̷͎̝̀c̶͚͙͐a̸̢̚l̷̼̄̒| fortune";
     let textIndex = 0;
 
     let timer = 0;
-    let textTime = .1;
+    let textTime = .05;
+    let textSpeedTime = 0;
+    let currentTime = textTime;
 
     let blinkTimer = 0;
     let blinkTime = .5;
     let blinkOn = false;
+    let speed = false;
 
-    text.text = "";
+    textBox.text_box.text.text = "";
 
     let lastTime = 0;
 
+    let textEnd = false;
 
-    page.coin.button.addEventListener("click", function(e){
+
+    page.coin.button.addEventListener("click", function (e) {
         console.log("here");
-        page.coin.gotoAndStop(1);
-    })
+        page.coin.gotoAndStop(2);
+    });
+
+    page.addEventListener("click", function (e) {
+
+        if (writeToText) {
+
+            if (!textEnd) {
+                textIndex = fullText.length;
+                textEnd = true;
+            }else{
+                textBox.gotoAndPlay(textBox.currentFrame+1);
+            }
+
+        }
+    });
+
     function update(t) {
 
         let deltaTime = (t - lastTime) / 1000;
-        lastTime = t;
 
-        text.text = fullText.slice(0, textIndex) + ((blinkOn) ? "" : "_");
+        if (writeToText) {
+
+            lastTime = t;
+
+            // console.log(fullText.substring(textIndex,textIndex+1));
 
 
-        if (text.text.length < fullText.length) {
-            if (timer >= textTime) {
-                textIndex++;
-                timer = 0;
+            textBox.text_box.text.text = fullText.slice(0, textIndex) + ((blinkOn) ? "" : "_");
+
+            textBox.text_box.text.text = textBox.text_box.text.text.replaceAll("|", "");
+
+
+            if (textBox.text_box.text.text.length < fullText.replaceAll("|", "").length) {
+
+                textEnd = false;
+
+                if (timer >= currentTime) {
+                    textIndex++;
+                    timer = 0;
+
+                    if (fullText.substring(textIndex, textIndex + 1) === "|") {
+                        speed = !speed;
+
+                        if (speed) {
+                            currentTime = textSpeedTime;
+                        } else {
+                            currentTime = textTime;
+                        }
+                    }
+                } else {
+                    timer += deltaTime;
+                }
+
             } else {
-                timer += deltaTime;
-            }
 
-        }else{
-            if (blinkTimer >= blinkTime) {
-                blinkOn = !blinkOn;
-                blinkTimer = 0;
-            } else {
-                blinkTimer += deltaTime;
+                textEnd = true;
+
+                if (blinkTimer >= blinkTime) {
+                    blinkOn = !blinkOn;
+                    blinkTimer = 0;
+                } else {
+                    blinkTimer += deltaTime;
+                }
             }
         }
 
@@ -146,9 +220,9 @@ function page_init(lib) {
         requestAnimationFrame(update);
     }
 
-    window.addEventListener("click", function (e) {
-        console.log("x pos: " + stage.mouseX);
-    });
+    // window.addEventListener("click", function (e) {
+    //     console.log("x pos: " + stage.mouseX);
+    // });
 
     onScroll(null);
     onResize(null);
