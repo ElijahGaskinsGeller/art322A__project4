@@ -51,12 +51,15 @@ function page_init(lib) {
 
     let page = _this.page;
 
-    // let text = page.text;
+    let machine = page.machine;
+    machine.gotoAndStop(0);
+    console.log(machine);
 
     let textBox = page.text_box;
     let writeToText = false;
 
     let coin = page.coin;
+    let coinActive = false;
 
     coin.gotoAndStop(0);
 
@@ -65,7 +68,7 @@ function page_init(lib) {
     textBox.gotoAndStop(0);
 
 
-    page.timeline.addTween(createjs.Tween.get(page).wait(page.totalFrames - 1).call(function (e) {
+    machine.intro_animation.timeline.addTween(createjs.Tween.get(machine.intro_animation).wait(page.totalFrames - 1).call(function (e) {
         textBox.gotoAndPlay(0);
     }).wait(1));
 
@@ -73,6 +76,7 @@ function page_init(lib) {
         textBox.stop();
         coin.gotoAndStop(1);
         writeToText = true;
+        machine.gotoAndStop(2);
     }).wait(1));
 
     textBox.timeline.addTween(createjs.Tween.get(textBox).wait(textBox.totalFrames - 1).call(function (e) {
@@ -83,8 +87,6 @@ function page_init(lib) {
 
 
     // console.log(stage.mouseX);
-
-    console.log(page.text);
 
 
     function onResize(e) {
@@ -127,7 +129,7 @@ function page_init(lib) {
     }
 
 
-    let fullText = "Insert a coin to receive your |t̷̼̭͐̀ȩ̵́c̷̥̫͂̆h̷̞̺͑͝n̶̰̯͆͐o̷̹͝l̸͙̀o̴̰͐g̴͇̹̈î̷͎̝̀c̶͚͙͐a̸̢̚l̷̼̄̒| fortune";
+    let fullText = "Insert a |c̸̘̈́ȯ̷͓i̷̪̓n̸̰̄| to receive your |t̷̼̭͐̀ȩ̵́c̷̥̫͂̆h̷̞̺͑͝n̶̰̯͆͐o̷̹͝l̸͙̀o̴̰͐g̴͇̹̈î̷͎̝̀c̶͚͙͐a̸̢̚l̷̼̄̒| fortune";
     let textIndex = 0;
 
     let timer = 0;
@@ -147,9 +149,20 @@ function page_init(lib) {
     let textEnd = false;
 
 
-    page.coin.button.addEventListener("click", function (e) {
-        console.log("here");
+    let coinTriggerEvent = function (e){
         page.coin.gotoAndStop(2);
+    }
+
+    page.coin.button.addEventListener("click", function (e) {
+        coinTriggerEvent(e);
+    });
+
+    page.machine.button.addEventListener("click", function(e){
+
+        if(textEnd){
+            coinTriggerEvent(e);
+        }
+
     });
 
     page.addEventListener("click", function (e) {
@@ -158,7 +171,6 @@ function page_init(lib) {
 
             if (!textEnd) {
                 textIndex = fullText.length;
-                textEnd = true;
             }else{
                 textBox.gotoAndPlay(textBox.currentFrame+1);
             }
@@ -194,8 +206,10 @@ function page_init(lib) {
                         speed = !speed;
 
                         if (speed) {
+                            machine.gotoAndStop(3);
                             currentTime = textSpeedTime;
                         } else {
+                            machine.gotoAndStop(2);
                             currentTime = textTime;
                         }
                     }
@@ -205,7 +219,11 @@ function page_init(lib) {
 
             } else {
 
-                textEnd = true;
+                if(!textEnd){
+                    textEnd = true;
+                    machine.gotoAndStop(1);
+
+                }
 
                 if (blinkTimer >= blinkTime) {
                     blinkOn = !blinkOn;
