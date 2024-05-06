@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"zoltr_atlas_1", frames: [[0,0,216,384],[218,0,216,384],[436,0,216,384],[654,0,216,384],[872,0,216,384],[1090,0,216,384],[1308,0,216,384],[1526,0,216,384],[1744,0,216,384],[0,386,216,384],[218,386,216,384],[436,386,216,384],[654,386,216,384],[872,386,216,384],[1090,386,216,384],[1308,386,216,384],[1526,386,216,384],[1744,386,216,384],[0,772,216,384],[218,772,216,384],[436,772,216,384],[654,772,216,384],[872,772,216,384],[1090,772,216,384],[1308,772,216,384],[1526,772,216,384],[1744,772,216,384],[0,1158,216,384],[218,1158,216,384],[436,1158,216,384]]},
+		{name:"zoltr_atlas_1", frames: [[0,0,216,384],[0,386,216,384],[0,772,216,384],[0,1158,216,384],[0,1544,216,384],[218,0,216,384],[218,386,216,384],[218,772,216,384],[218,1158,216,384],[218,1544,216,384],[436,0,216,384],[654,0,216,384],[872,0,216,384],[1090,0,216,384],[1308,0,216,384],[1526,0,216,384],[1744,0,216,384],[436,386,216,384],[436,772,216,384],[436,1158,216,384],[436,1544,216,384],[654,386,216,384],[654,772,216,384],[654,1158,216,384],[654,1544,216,384],[872,386,216,384],[1090,386,216,384],[1308,386,216,384],[1526,386,216,384],[1744,386,216,384],[872,772,216,384],[872,1158,216,384],[872,1544,216,384],[1090,772,216,384],[1090,1158,216,384],[1090,1544,216,384],[1308,772,216,384],[1526,772,216,384],[1744,772,216,384],[1308,1158,216,384],[1308,1544,216,384]]},
 		{name:"zoltr_atlas_2", frames: [[0,0,216,384],[0,386,216,384],[0,772,216,384],[0,1158,216,384],[0,1544,216,384],[218,0,216,384],[218,386,216,384],[218,772,216,384],[218,1158,216,384],[218,1544,216,384],[436,0,216,384],[654,0,216,384],[872,0,216,384],[1090,0,216,384],[1308,0,216,384],[1526,0,216,384],[1744,0,216,384],[436,386,216,384],[436,772,216,384],[436,1158,216,384],[436,1544,216,384],[654,386,216,384],[654,772,216,384],[654,1158,216,384],[654,1544,216,384],[872,386,216,384],[1090,386,216,384],[1308,386,216,384],[1526,386,216,384],[1744,386,216,384],[872,772,216,384],[872,1158,216,384],[872,1544,216,384],[1090,772,216,384],[1090,1158,216,384],[1090,1544,216,384],[1308,772,216,384],[1526,772,216,384],[1744,772,216,384],[1308,1158,216,384],[1308,1544,216,384],[1526,1158,216,384],[1744,1158,216,384],[1526,1544,216,384],[1744,1544,216,384]]},
 		{name:"zoltr_atlas_3", frames: [[0,0,216,384],[0,386,216,384],[0,772,216,384],[0,1158,216,384],[0,1544,216,384],[218,0,216,384],[218,386,216,384],[218,772,216,384],[218,1158,216,384],[218,1544,216,384],[436,0,216,384],[654,0,216,384],[872,0,216,384],[1090,0,216,384],[1308,0,216,384],[1526,0,216,384],[1744,0,216,384],[436,386,216,384],[436,772,216,384],[436,1158,216,384],[436,1544,216,384],[654,386,216,384],[654,772,216,384],[654,1158,216,384],[654,1544,216,384],[872,386,216,384],[1090,386,216,384],[1308,386,216,384],[1526,386,216,384],[1744,386,216,384],[872,772,216,384],[872,1158,216,384],[872,1544,216,384],[1090,772,216,384],[1090,1158,216,384],[1090,1544,216,384],[1308,772,216,384],[1526,772,216,384],[1744,772,216,384],[1308,1158,216,384],[1308,1544,216,384],[1526,1158,216,384],[1744,1158,216,384],[1526,1544,216,384],[1744,1544,216,384]]}
 ];
@@ -866,6 +866,83 @@ lib.ssMetadata = [
 	this.initialize(ss["zoltr_atlas_1"]);
 	this.gotoAndStop(29);
 }).prototype = p = new cjs.Sprite();
+
+
+
+(lib._0200 = function() {
+	this.initialize(ss["zoltr_atlas_1"]);
+	this.gotoAndStop(30);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib._0201 = function() {
+	this.initialize(ss["zoltr_atlas_1"]);
+	this.gotoAndStop(31);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib._0202 = function() {
+	this.initialize(ss["zoltr_atlas_1"]);
+	this.gotoAndStop(32);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib._0203 = function() {
+	this.initialize(ss["zoltr_atlas_1"]);
+	this.gotoAndStop(33);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib._0204 = function() {
+	this.initialize(ss["zoltr_atlas_1"]);
+	this.gotoAndStop(34);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib._0205 = function() {
+	this.initialize(ss["zoltr_atlas_1"]);
+	this.gotoAndStop(35);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib._0206 = function() {
+	this.initialize(ss["zoltr_atlas_1"]);
+	this.gotoAndStop(36);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib._0207 = function() {
+	this.initialize(ss["zoltr_atlas_1"]);
+	this.gotoAndStop(37);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib._0208 = function() {
+	this.initialize(ss["zoltr_atlas_1"]);
+	this.gotoAndStop(38);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib._0209 = function() {
+	this.initialize(ss["zoltr_atlas_1"]);
+	this.gotoAndStop(39);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib._0210 = function() {
+	this.initialize(ss["zoltr_atlas_1"]);
+	this.gotoAndStop(40);
+}).prototype = p = new cjs.Sprite();
 // helper functions:
 
 function mc_symbol_clone() {
@@ -883,6 +960,58 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 	prototype.frameBounds = frameBounds;
 	return prototype;
 	}
+
+
+(lib.TicketEnter = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// timeline functions:
+	this.frame_10 = function() {
+		let _this = this;
+		
+		_this.stop();
+	}
+
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).wait(10).call(this.frame_10).wait(1));
+
+	// Layer_1
+	this.instance = new lib._0200();
+
+	this.instance_1 = new lib._0201();
+
+	this.instance_2 = new lib._0202();
+
+	this.instance_3 = new lib._0203();
+
+	this.instance_4 = new lib._0204();
+
+	this.instance_5 = new lib._0205();
+
+	this.instance_6 = new lib._0206();
+
+	this.instance_7 = new lib._0207();
+
+	this.instance_8 = new lib._0208();
+
+	this.instance_9 = new lib._0209();
+
+	this.instance_10 = new lib._0210();
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_2}]},1).to({state:[{t:this.instance_3}]},1).to({state:[{t:this.instance_4}]},1).to({state:[{t:this.instance_5}]},1).to({state:[{t:this.instance_6}]},1).to({state:[{t:this.instance_7}]},1).to({state:[{t:this.instance_8}]},1).to({state:[{t:this.instance_9}]},1).to({state:[{t:this.instance_10}]},1).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,216,384);
 
 
 (lib.TextBoxText = function(mode,startPosition,loop,reversed) {
@@ -903,9 +1032,9 @@ if (reversed == null) { reversed = false; }
 	mask.setTransform(89.95,24.625);
 
 	// Layer_1
-	this.text = new cjs.Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas finibus venenatis augue quis pharetra. Aenean nec vestibulum mauris, eu hendrerit quam. Vivamus iaculis semper orci, vel vestibulum massa consequat at. Donec maximus eros non enim mattis varius. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam hendrerit pellentesque nunc, quis faucibus metus suscipit sed. Quisque rutrum, tortor non consectetur ullamcorper, ante nulla bibendum velit, eu facilisis sem est ut risus.", "12px 'Times New Roman'", "#00CC00");
+	this.text = new cjs.Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas finibus venenatis augue quis pharetra. Aenean nec vestibulum mauris, eu hendrerit quam. Vivamus iaculis semper orci, vel vestibulum massa consequat at. Donec maximus eros non enim mattis varius. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam hendrerit pellentesque nunc, quis faucibus metus suscipit sed. Quisque rutrum, tortor non consectetur ullamcorper, ante nulla bibendum velit, eu facilisis sem est ut risus.", "12px 'Candara'", "#00CC00");
 	this.text.name = "text";
-	this.text.lineHeight = 15;
+	this.text.lineHeight = 17;
 	this.text.lineWidth = 172;
 	this.text.parent = this;
 	this.text.setTransform(4.1,4.15);
@@ -1129,19 +1258,6 @@ if (reversed == null) { reversed = false; }
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
 
-	// timeline functions:
-	this.frame_19 = function() {
-		var _this = this;
-		/*
-		Stop a Movie Clip/Video
-		Stops the specified movie clip or video.
-		*/
-		_this.stop();
-	}
-
-	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).wait(19).call(this.frame_19).wait(1));
-
 	// Layer_1
 	this.instance = new lib._0081();
 
@@ -1338,6 +1454,30 @@ if (reversed == null) { reversed = false; }
 }).prototype = getMCSymbolPrototype(lib.Button, new cjs.Rectangle(0,0,51.8,51.8), null);
 
 
+(lib.Ticket = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Layer_1
+	this.instance = new lib.TicketEnter();
+	this.instance.setTransform(108,192,1,1,0,0,0,108,192);
+	this.instance._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({_off:false},0).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,216,384);
+
+
 (lib.TextBox = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
@@ -1515,10 +1655,11 @@ if (reversed == null) { reversed = false; }
 	this.instance = new lib.CoinLoop();
 	this.instance.setTransform(108,192,1,1,0,0,0,108,192);
 
-	this.instance_1 = new lib.InsertCoin();
-	this.instance_1.setTransform(108,192,1,1,0,0,0,108,192);
+	this.insert_coin = new lib.InsertCoin();
+	this.insert_coin.name = "insert_coin";
+	this.insert_coin.setTransform(108,192,1,1,0,0,0,108,192);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance}]},1).to({state:[{t:this.instance_1}]},1).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance}]},1).to({state:[{t:this.insert_coin}]},1).wait(1));
 
 	this._renderFirstFrame();
 
@@ -1536,6 +1677,12 @@ if (reversed == null) { reversed = false; }
 	props.loop = loop;
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
+
+	// ticket
+	this.ticket = new lib.Ticket();
+	this.ticket.name = "ticket";
+
+	this.timeline.addTween(cjs.Tween.get(this.ticket).wait(50));
 
 	// text_box
 	this.text_box = new lib.TextBox();

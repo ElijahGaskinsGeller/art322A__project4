@@ -55,15 +55,38 @@ function page_init(lib) {
     machine.gotoAndStop(0);
     console.log(machine);
 
+    let ticket = page.ticket;
+    ticket.gotoAndStop(0);
+    let displayTicket = false;
+
     let textBox = page.text_box;
     let writeToText = false;
 
+    let introText = "Insert a |coin| to receive your |technology| fortune"
+
+    let fullText = introText;
+
+
+    let textIndex = 0;
+
+    let timer = 0;
+    let textTime = .05;
+    let textSpeedTime = .1;
+    let currentTime = textTime;
+
+    let blinkTimer = 0;
+    let blinkTime = .5;
+    let blinkOn = false;
+    let speed = false;
+
+
     let coin = page.coin;
-    let coinActive = false;
+    let coinUsed = false;
+
 
     coin.gotoAndStop(0);
 
-    console.log(textBox);
+    console.log(coin);
 
     textBox.gotoAndStop(0);
 
@@ -74,8 +97,12 @@ function page_init(lib) {
 
     textBox.timeline.addTween(createjs.Tween.get(textBox).wait(textBox.timeline._labels.midpoint).call(function (e) {
         textBox.stop();
-        coin.gotoAndStop(1);
+        if (!coinUsed) {
+            coin.gotoAndStop(1);
+        }
+
         writeToText = true;
+
         machine.gotoAndStop(2);
     }).wait(1));
 
@@ -85,8 +112,14 @@ function page_init(lib) {
         writeToText = false;
     }).wait(1));
 
+    coin.insert_coin.timeline.addTween(createjs.Tween.get(coin.insert_coin).wait(coin.insert_coin.totalFrames - 1).call(function (e) {
 
-    // console.log(stage.mouseX);
+        coin.insert_coin.stop();
+        displayTicket = true;
+        textBox.gotoAndPlay(0);
+        textIndex = 0;
+
+    }).wait(1));
 
 
     function onResize(e) {
@@ -97,15 +130,6 @@ function page_init(lib) {
         stage.scaleX = stage.scaleY * stageRatio;
 
         page.scaleX = (canvas.clientHeight) / canvas.clientWidth * 1.5 * stageRatio;
-
-        // console.log("dpr: "+window.devicePixelRatio);
-        //
-        // console.log(page.x);
-        // console.log(page.nominalBounds.width*page.scaleX);
-        // console.log("sx: "+stage.scaleX);
-        // console.log(lib.properties.width);
-        // console.log(lib.properties.width*stage.scaleX);
-        // console.log(window.innerWidth)
 
 
         page.x = lib.properties.width / 2 / stageRatio;
@@ -118,29 +142,8 @@ function page_init(lib) {
     }
 
     function onScroll(e) {
-
-        //NOTE: probably no scroll functionality
-
-        // let currentScroll = WindowScrollNormalPosition();
-
-        // page.y = lerp(scrollStart,scrollEnd, currentScroll);
-
-
     }
 
-
-    let fullText = "Insert a |c̸̘̈́ȯ̷͓i̷̪̓n̸̰̄| to receive your |t̷̼̭͐̀ȩ̵́c̷̥̫͂̆h̷̞̺͑͝n̶̰̯͆͐o̷̹͝l̸͙̀o̴̰͐g̴͇̹̈î̷͎̝̀c̶͚͙͐a̸̢̚l̷̼̄̒| fortune";
-    let textIndex = 0;
-
-    let timer = 0;
-    let textTime = .05;
-    let textSpeedTime = 0;
-    let currentTime = textTime;
-
-    let blinkTimer = 0;
-    let blinkTime = .5;
-    let blinkOn = false;
-    let speed = false;
 
     textBox.text_box.text.text = "";
 
@@ -149,7 +152,8 @@ function page_init(lib) {
     let textEnd = false;
 
 
-    let coinTriggerEvent = function (e){
+    let coinTriggerEvent = function (e) {
+        coinUsed = true;
         page.coin.gotoAndStop(2);
     }
 
@@ -157,9 +161,9 @@ function page_init(lib) {
         coinTriggerEvent(e);
     });
 
-    page.machine.button.addEventListener("click", function(e){
+    page.machine.button.addEventListener("click", function (e) {
 
-        if(textEnd){
+        if (textEnd) {
             coinTriggerEvent(e);
         }
 
@@ -171,8 +175,14 @@ function page_init(lib) {
 
             if (!textEnd) {
                 textIndex = fullText.length;
-            }else{
-                textBox.gotoAndPlay(textBox.currentFrame+1);
+            } else {
+                textBox.gotoAndPlay(textBox.currentFrame + 1);
+
+                if(displayTicket){
+
+                    //TODO: reviel ticket
+
+                }
             }
 
         }
@@ -219,9 +229,13 @@ function page_init(lib) {
 
             } else {
 
-                if(!textEnd){
+                if (!textEnd) {
                     textEnd = true;
                     machine.gotoAndStop(1);
+
+                    if(displayTicket && ticket.currentFrame !== 1){
+                        ticket.gotoAndStop(1);
+                    }
 
                 }
 

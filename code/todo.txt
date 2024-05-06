@@ -1,4 +1,8 @@
 
+ticket:
+
+x: -11.1257 m
+y: 4.32061 m
 
 
 0: character
