@@ -124,7 +124,6 @@ function page_init(lib) {
                 "Stock up on |goods| and ammunition before the |millennium| bug hits",
                 "Don't |forget| to feed your |Tamagotchi|",
                 "You can always ask |Jeeves| if you have any |questions|",
-                "Invest in |bitcoin| before its too late",
             ];
 
         let index = RandomInt(fortuneTexts.length-1);
