@@ -3,9 +3,10 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"zoltr_atlas_1", frames: [[0,0,216,384],[0,386,216,384],[0,772,216,384],[0,1158,216,384],[0,1544,216,384],[218,0,216,384],[218,386,216,384],[218,772,216,384],[218,1158,216,384],[218,1544,216,384],[436,0,216,384],[654,0,216,384],[872,0,216,384],[1090,0,216,384],[1308,0,216,384],[1526,0,216,384],[1744,0,216,384],[436,386,216,384],[436,772,216,384],[436,1158,216,384],[436,1544,216,384],[654,386,216,384],[654,772,216,384],[654,1158,216,384],[654,1544,216,384],[872,386,216,384],[1090,386,216,384],[1308,386,216,384],[1526,386,216,384],[1744,386,216,384],[872,772,216,384],[872,1158,216,384],[872,1544,216,384],[1090,772,216,384],[1090,1158,216,384],[1090,1544,216,384],[1308,772,216,384],[1526,772,216,384],[1744,772,216,384],[1308,1158,216,384],[1308,1544,216,384]]},
+		{name:"zoltr_atlas_1", frames: [[0,0,216,384],[0,386,216,384],[0,772,216,384],[0,1158,216,384],[0,1544,216,384],[218,0,216,384],[218,386,216,384],[218,772,216,384],[218,1158,216,384],[218,1544,216,384],[436,0,216,384],[436,386,216,384],[436,772,216,384],[436,1158,216,384],[436,1544,216,384],[654,0,216,384],[654,386,216,384],[654,772,216,384],[654,1158,216,384],[654,1544,216,384],[872,0,216,384]]},
 		{name:"zoltr_atlas_2", frames: [[0,0,216,384],[0,386,216,384],[0,772,216,384],[0,1158,216,384],[0,1544,216,384],[218,0,216,384],[218,386,216,384],[218,772,216,384],[218,1158,216,384],[218,1544,216,384],[436,0,216,384],[654,0,216,384],[872,0,216,384],[1090,0,216,384],[1308,0,216,384],[1526,0,216,384],[1744,0,216,384],[436,386,216,384],[436,772,216,384],[436,1158,216,384],[436,1544,216,384],[654,386,216,384],[654,772,216,384],[654,1158,216,384],[654,1544,216,384],[872,386,216,384],[1090,386,216,384],[1308,386,216,384],[1526,386,216,384],[1744,386,216,384],[872,772,216,384],[872,1158,216,384],[872,1544,216,384],[1090,772,216,384],[1090,1158,216,384],[1090,1544,216,384],[1308,772,216,384],[1526,772,216,384],[1744,772,216,384],[1308,1158,216,384],[1308,1544,216,384],[1526,1158,216,384],[1744,1158,216,384],[1526,1544,216,384],[1744,1544,216,384]]},
-		{name:"zoltr_atlas_3", frames: [[0,0,216,384],[0,386,216,384],[0,772,216,384],[0,1158,216,384],[0,1544,216,384],[218,0,216,384],[218,386,216,384],[218,772,216,384],[218,1158,216,384],[218,1544,216,384],[436,0,216,384],[654,0,216,384],[872,0,216,384],[1090,0,216,384],[1308,0,216,384],[1526,0,216,384],[1744,0,216,384],[436,386,216,384],[436,772,216,384],[436,1158,216,384],[436,1544,216,384],[654,386,216,384],[654,772,216,384],[654,1158,216,384],[654,1544,216,384],[872,386,216,384],[1090,386,216,384],[1308,386,216,384],[1526,386,216,384],[1744,386,216,384],[872,772,216,384],[872,1158,216,384],[872,1544,216,384],[1090,772,216,384],[1090,1158,216,384],[1090,1544,216,384],[1308,772,216,384],[1526,772,216,384],[1744,772,216,384],[1308,1158,216,384],[1308,1544,216,384],[1526,1158,216,384],[1744,1158,216,384],[1526,1544,216,384],[1744,1544,216,384]]}
+		{name:"zoltr_atlas_3", frames: [[0,0,216,384],[0,386,216,384],[0,772,216,384],[0,1158,216,384],[0,1544,216,384],[218,0,216,384],[218,386,216,384],[218,772,216,384],[218,1158,216,384],[218,1544,216,384],[436,0,216,384],[654,0,216,384],[872,0,216,384],[1090,0,216,384],[1308,0,216,384],[1526,0,216,384],[1744,0,216,384],[436,386,216,384],[436,772,216,384],[436,1158,216,384],[436,1544,216,384],[654,386,216,384],[654,772,216,384],[654,1158,216,384],[654,1544,216,384],[872,386,216,384],[1090,386,216,384],[1308,386,216,384],[1526,386,216,384],[1744,386,216,384],[872,772,216,384],[872,1158,216,384],[872,1544,216,384],[1090,772,216,384],[1090,1158,216,384],[1090,1544,216,384],[1308,772,216,384],[1526,772,216,384],[1744,772,216,384],[1308,1158,216,384],[1308,1544,216,384],[1526,1158,216,384],[1744,1158,216,384],[1526,1544,216,384],[1744,1544,216,384]]},
+		{name:"zoltr_atlas_4", frames: [[0,0,216,384],[0,386,216,384],[0,772,216,384],[0,1158,216,384],[0,1544,216,384],[218,0,216,384],[218,386,216,384],[218,772,216,384],[218,1158,216,384],[218,1544,216,384],[436,0,216,384],[654,0,216,384],[872,0,216,384],[1090,0,216,384],[1308,0,216,384],[1526,0,216,384],[1744,0,216,384],[436,386,216,384],[436,772,216,384],[436,1158,216,384],[436,1544,216,384],[654,386,216,384],[654,772,216,384],[654,1158,216,384],[654,1544,216,384],[872,386,216,384],[1090,386,216,384],[1308,386,216,384],[1526,386,216,384],[1744,386,216,384],[872,772,216,384],[872,1158,216,384],[872,1544,216,384],[1090,772,216,384],[1090,1158,216,384],[1090,1544,216,384],[1308,772,216,384],[1526,772,216,384],[1744,772,216,384],[1308,1158,216,384],[1308,1544,216,384],[1526,1158,216,384],[1744,1158,216,384],[1526,1544,216,384],[1744,1544,216,384]]}
 ];
 
 
@@ -30,918 +31,1093 @@ lib.ssMetadata = [
 
 
 (lib._0001 = function() {
-	this.initialize(ss["zoltr_atlas_3"]);
+	this.initialize(ss["zoltr_atlas_4"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0002 = function() {
-	this.initialize(ss["zoltr_atlas_3"]);
+	this.initialize(ss["zoltr_atlas_4"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0003 = function() {
-	this.initialize(ss["zoltr_atlas_3"]);
+	this.initialize(ss["zoltr_atlas_4"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0004 = function() {
-	this.initialize(ss["zoltr_atlas_3"]);
+	this.initialize(ss["zoltr_atlas_4"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0005 = function() {
-	this.initialize(ss["zoltr_atlas_3"]);
+	this.initialize(ss["zoltr_atlas_4"]);
 	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0006 = function() {
-	this.initialize(ss["zoltr_atlas_3"]);
+	this.initialize(ss["zoltr_atlas_4"]);
 	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0007 = function() {
-	this.initialize(ss["zoltr_atlas_3"]);
+	this.initialize(ss["zoltr_atlas_4"]);
 	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0008 = function() {
-	this.initialize(ss["zoltr_atlas_3"]);
+	this.initialize(ss["zoltr_atlas_4"]);
 	this.gotoAndStop(7);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0009 = function() {
-	this.initialize(ss["zoltr_atlas_3"]);
+	this.initialize(ss["zoltr_atlas_4"]);
 	this.gotoAndStop(8);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0010 = function() {
-	this.initialize(ss["zoltr_atlas_3"]);
+	this.initialize(ss["zoltr_atlas_4"]);
 	this.gotoAndStop(9);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0011 = function() {
-	this.initialize(ss["zoltr_atlas_3"]);
+	this.initialize(ss["zoltr_atlas_4"]);
 	this.gotoAndStop(10);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0012 = function() {
-	this.initialize(ss["zoltr_atlas_3"]);
+	this.initialize(ss["zoltr_atlas_4"]);
 	this.gotoAndStop(11);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0013 = function() {
-	this.initialize(ss["zoltr_atlas_3"]);
+	this.initialize(ss["zoltr_atlas_4"]);
 	this.gotoAndStop(12);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0014 = function() {
-	this.initialize(ss["zoltr_atlas_3"]);
+	this.initialize(ss["zoltr_atlas_4"]);
 	this.gotoAndStop(13);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0015 = function() {
-	this.initialize(ss["zoltr_atlas_3"]);
+	this.initialize(ss["zoltr_atlas_4"]);
 	this.gotoAndStop(14);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0016 = function() {
-	this.initialize(ss["zoltr_atlas_3"]);
+	this.initialize(ss["zoltr_atlas_4"]);
 	this.gotoAndStop(15);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0017 = function() {
-	this.initialize(ss["zoltr_atlas_3"]);
+	this.initialize(ss["zoltr_atlas_4"]);
 	this.gotoAndStop(16);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0018 = function() {
-	this.initialize(ss["zoltr_atlas_3"]);
+	this.initialize(ss["zoltr_atlas_4"]);
 	this.gotoAndStop(17);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0019 = function() {
-	this.initialize(ss["zoltr_atlas_3"]);
+	this.initialize(ss["zoltr_atlas_4"]);
 	this.gotoAndStop(18);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0020 = function() {
-	this.initialize(ss["zoltr_atlas_3"]);
+	this.initialize(ss["zoltr_atlas_4"]);
 	this.gotoAndStop(19);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0021 = function() {
-	this.initialize(ss["zoltr_atlas_3"]);
+	this.initialize(ss["zoltr_atlas_4"]);
 	this.gotoAndStop(20);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0022 = function() {
-	this.initialize(ss["zoltr_atlas_3"]);
+	this.initialize(ss["zoltr_atlas_4"]);
 	this.gotoAndStop(21);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0023 = function() {
-	this.initialize(ss["zoltr_atlas_3"]);
+	this.initialize(ss["zoltr_atlas_4"]);
 	this.gotoAndStop(22);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0024 = function() {
-	this.initialize(ss["zoltr_atlas_3"]);
+	this.initialize(ss["zoltr_atlas_4"]);
 	this.gotoAndStop(23);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0025 = function() {
-	this.initialize(ss["zoltr_atlas_3"]);
+	this.initialize(ss["zoltr_atlas_4"]);
 	this.gotoAndStop(24);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0026 = function() {
-	this.initialize(ss["zoltr_atlas_3"]);
+	this.initialize(ss["zoltr_atlas_4"]);
 	this.gotoAndStop(25);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0027 = function() {
-	this.initialize(ss["zoltr_atlas_3"]);
+	this.initialize(ss["zoltr_atlas_4"]);
 	this.gotoAndStop(26);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0028 = function() {
-	this.initialize(ss["zoltr_atlas_3"]);
+	this.initialize(ss["zoltr_atlas_4"]);
 	this.gotoAndStop(27);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0029 = function() {
-	this.initialize(ss["zoltr_atlas_3"]);
+	this.initialize(ss["zoltr_atlas_4"]);
 	this.gotoAndStop(28);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0030 = function() {
-	this.initialize(ss["zoltr_atlas_3"]);
+	this.initialize(ss["zoltr_atlas_4"]);
 	this.gotoAndStop(29);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0031 = function() {
-	this.initialize(ss["zoltr_atlas_3"]);
+	this.initialize(ss["zoltr_atlas_4"]);
 	this.gotoAndStop(30);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0032 = function() {
-	this.initialize(ss["zoltr_atlas_3"]);
+	this.initialize(ss["zoltr_atlas_4"]);
 	this.gotoAndStop(31);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0033 = function() {
-	this.initialize(ss["zoltr_atlas_3"]);
+	this.initialize(ss["zoltr_atlas_4"]);
 	this.gotoAndStop(32);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0034 = function() {
-	this.initialize(ss["zoltr_atlas_3"]);
+	this.initialize(ss["zoltr_atlas_4"]);
 	this.gotoAndStop(33);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0035 = function() {
-	this.initialize(ss["zoltr_atlas_3"]);
+	this.initialize(ss["zoltr_atlas_4"]);
 	this.gotoAndStop(34);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0036 = function() {
-	this.initialize(ss["zoltr_atlas_3"]);
+	this.initialize(ss["zoltr_atlas_4"]);
 	this.gotoAndStop(35);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0037 = function() {
-	this.initialize(ss["zoltr_atlas_3"]);
+	this.initialize(ss["zoltr_atlas_4"]);
 	this.gotoAndStop(36);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0038 = function() {
-	this.initialize(ss["zoltr_atlas_3"]);
+	this.initialize(ss["zoltr_atlas_4"]);
 	this.gotoAndStop(37);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0039 = function() {
-	this.initialize(ss["zoltr_atlas_3"]);
+	this.initialize(ss["zoltr_atlas_4"]);
 	this.gotoAndStop(38);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0040 = function() {
-	this.initialize(ss["zoltr_atlas_3"]);
+	this.initialize(ss["zoltr_atlas_4"]);
 	this.gotoAndStop(39);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0041 = function() {
-	this.initialize(ss["zoltr_atlas_3"]);
+	this.initialize(ss["zoltr_atlas_4"]);
 	this.gotoAndStop(40);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0042 = function() {
-	this.initialize(ss["zoltr_atlas_3"]);
+	this.initialize(ss["zoltr_atlas_4"]);
 	this.gotoAndStop(41);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0043 = function() {
-	this.initialize(ss["zoltr_atlas_3"]);
+	this.initialize(ss["zoltr_atlas_4"]);
 	this.gotoAndStop(42);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0044 = function() {
-	this.initialize(ss["zoltr_atlas_3"]);
+	this.initialize(ss["zoltr_atlas_4"]);
 	this.gotoAndStop(43);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0045 = function() {
-	this.initialize(ss["zoltr_atlas_3"]);
+	this.initialize(ss["zoltr_atlas_4"]);
 	this.gotoAndStop(44);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0046 = function() {
-	this.initialize(ss["zoltr_atlas_2"]);
+	this.initialize(ss["zoltr_atlas_3"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0047 = function() {
-	this.initialize(ss["zoltr_atlas_2"]);
+	this.initialize(ss["zoltr_atlas_3"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0048 = function() {
-	this.initialize(ss["zoltr_atlas_2"]);
+	this.initialize(ss["zoltr_atlas_3"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0049 = function() {
-	this.initialize(ss["zoltr_atlas_2"]);
+	this.initialize(ss["zoltr_atlas_3"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0050 = function() {
-	this.initialize(ss["zoltr_atlas_2"]);
+	this.initialize(ss["zoltr_atlas_3"]);
 	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0060 = function() {
-	this.initialize(ss["zoltr_atlas_2"]);
+	this.initialize(ss["zoltr_atlas_3"]);
 	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0061 = function() {
-	this.initialize(ss["zoltr_atlas_2"]);
+	this.initialize(ss["zoltr_atlas_3"]);
 	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0062 = function() {
-	this.initialize(ss["zoltr_atlas_2"]);
+	this.initialize(ss["zoltr_atlas_3"]);
 	this.gotoAndStop(7);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0063 = function() {
-	this.initialize(ss["zoltr_atlas_2"]);
+	this.initialize(ss["zoltr_atlas_3"]);
 	this.gotoAndStop(8);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0064 = function() {
-	this.initialize(ss["zoltr_atlas_2"]);
+	this.initialize(ss["zoltr_atlas_3"]);
 	this.gotoAndStop(9);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0065 = function() {
-	this.initialize(ss["zoltr_atlas_2"]);
+	this.initialize(ss["zoltr_atlas_3"]);
 	this.gotoAndStop(10);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0066 = function() {
-	this.initialize(ss["zoltr_atlas_2"]);
+	this.initialize(ss["zoltr_atlas_3"]);
 	this.gotoAndStop(11);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0067 = function() {
-	this.initialize(ss["zoltr_atlas_2"]);
+	this.initialize(ss["zoltr_atlas_3"]);
 	this.gotoAndStop(12);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0068 = function() {
-	this.initialize(ss["zoltr_atlas_2"]);
+	this.initialize(ss["zoltr_atlas_3"]);
 	this.gotoAndStop(13);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0069 = function() {
-	this.initialize(ss["zoltr_atlas_2"]);
+	this.initialize(ss["zoltr_atlas_3"]);
 	this.gotoAndStop(14);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0070 = function() {
-	this.initialize(ss["zoltr_atlas_2"]);
+	this.initialize(ss["zoltr_atlas_3"]);
 	this.gotoAndStop(15);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0081 = function() {
-	this.initialize(ss["zoltr_atlas_2"]);
+	this.initialize(ss["zoltr_atlas_3"]);
 	this.gotoAndStop(16);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0082 = function() {
-	this.initialize(ss["zoltr_atlas_2"]);
+	this.initialize(ss["zoltr_atlas_3"]);
 	this.gotoAndStop(17);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0083 = function() {
-	this.initialize(ss["zoltr_atlas_2"]);
+	this.initialize(ss["zoltr_atlas_3"]);
 	this.gotoAndStop(18);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0084 = function() {
-	this.initialize(ss["zoltr_atlas_2"]);
+	this.initialize(ss["zoltr_atlas_3"]);
 	this.gotoAndStop(19);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0085 = function() {
-	this.initialize(ss["zoltr_atlas_2"]);
+	this.initialize(ss["zoltr_atlas_3"]);
 	this.gotoAndStop(20);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0086 = function() {
-	this.initialize(ss["zoltr_atlas_2"]);
+	this.initialize(ss["zoltr_atlas_3"]);
 	this.gotoAndStop(21);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0087 = function() {
-	this.initialize(ss["zoltr_atlas_2"]);
+	this.initialize(ss["zoltr_atlas_3"]);
 	this.gotoAndStop(22);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0088 = function() {
-	this.initialize(ss["zoltr_atlas_2"]);
+	this.initialize(ss["zoltr_atlas_3"]);
 	this.gotoAndStop(23);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0089 = function() {
-	this.initialize(ss["zoltr_atlas_2"]);
+	this.initialize(ss["zoltr_atlas_3"]);
 	this.gotoAndStop(24);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0090 = function() {
-	this.initialize(ss["zoltr_atlas_2"]);
+	this.initialize(ss["zoltr_atlas_3"]);
 	this.gotoAndStop(25);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0091 = function() {
-	this.initialize(ss["zoltr_atlas_2"]);
+	this.initialize(ss["zoltr_atlas_3"]);
 	this.gotoAndStop(26);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0092 = function() {
-	this.initialize(ss["zoltr_atlas_2"]);
+	this.initialize(ss["zoltr_atlas_3"]);
 	this.gotoAndStop(27);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0093 = function() {
-	this.initialize(ss["zoltr_atlas_2"]);
+	this.initialize(ss["zoltr_atlas_3"]);
 	this.gotoAndStop(28);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0094 = function() {
-	this.initialize(ss["zoltr_atlas_2"]);
+	this.initialize(ss["zoltr_atlas_3"]);
 	this.gotoAndStop(29);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0095 = function() {
-	this.initialize(ss["zoltr_atlas_2"]);
+	this.initialize(ss["zoltr_atlas_3"]);
 	this.gotoAndStop(30);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0096 = function() {
-	this.initialize(ss["zoltr_atlas_2"]);
+	this.initialize(ss["zoltr_atlas_3"]);
 	this.gotoAndStop(31);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0097 = function() {
-	this.initialize(ss["zoltr_atlas_2"]);
+	this.initialize(ss["zoltr_atlas_3"]);
 	this.gotoAndStop(32);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0098 = function() {
-	this.initialize(ss["zoltr_atlas_2"]);
+	this.initialize(ss["zoltr_atlas_3"]);
 	this.gotoAndStop(33);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0099 = function() {
-	this.initialize(ss["zoltr_atlas_2"]);
+	this.initialize(ss["zoltr_atlas_3"]);
 	this.gotoAndStop(34);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0100 = function() {
-	this.initialize(ss["zoltr_atlas_2"]);
+	this.initialize(ss["zoltr_atlas_3"]);
 	this.gotoAndStop(35);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0126 = function() {
-	this.initialize(ss["zoltr_atlas_2"]);
+	this.initialize(ss["zoltr_atlas_3"]);
 	this.gotoAndStop(36);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0127 = function() {
-	this.initialize(ss["zoltr_atlas_2"]);
+	this.initialize(ss["zoltr_atlas_3"]);
 	this.gotoAndStop(37);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0128 = function() {
-	this.initialize(ss["zoltr_atlas_2"]);
+	this.initialize(ss["zoltr_atlas_3"]);
 	this.gotoAndStop(38);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0129 = function() {
-	this.initialize(ss["zoltr_atlas_2"]);
+	this.initialize(ss["zoltr_atlas_3"]);
 	this.gotoAndStop(39);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0130 = function() {
-	this.initialize(ss["zoltr_atlas_2"]);
+	this.initialize(ss["zoltr_atlas_3"]);
 	this.gotoAndStop(40);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0131 = function() {
-	this.initialize(ss["zoltr_atlas_2"]);
+	this.initialize(ss["zoltr_atlas_3"]);
 	this.gotoAndStop(41);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0132 = function() {
-	this.initialize(ss["zoltr_atlas_2"]);
+	this.initialize(ss["zoltr_atlas_3"]);
 	this.gotoAndStop(42);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0140 = function() {
-	this.initialize(ss["zoltr_atlas_2"]);
+	this.initialize(ss["zoltr_atlas_3"]);
 	this.gotoAndStop(43);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0141 = function() {
-	this.initialize(ss["zoltr_atlas_2"]);
+	this.initialize(ss["zoltr_atlas_3"]);
 	this.gotoAndStop(44);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0142 = function() {
-	this.initialize(ss["zoltr_atlas_1"]);
+	this.initialize(ss["zoltr_atlas_2"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0143 = function() {
-	this.initialize(ss["zoltr_atlas_1"]);
+	this.initialize(ss["zoltr_atlas_2"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0144 = function() {
-	this.initialize(ss["zoltr_atlas_1"]);
+	this.initialize(ss["zoltr_atlas_2"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0160 = function() {
-	this.initialize(ss["zoltr_atlas_1"]);
+	this.initialize(ss["zoltr_atlas_2"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0161 = function() {
-	this.initialize(ss["zoltr_atlas_1"]);
+	this.initialize(ss["zoltr_atlas_2"]);
 	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0162 = function() {
-	this.initialize(ss["zoltr_atlas_1"]);
+	this.initialize(ss["zoltr_atlas_2"]);
 	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0163 = function() {
-	this.initialize(ss["zoltr_atlas_1"]);
+	this.initialize(ss["zoltr_atlas_2"]);
 	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0164 = function() {
-	this.initialize(ss["zoltr_atlas_1"]);
+	this.initialize(ss["zoltr_atlas_2"]);
 	this.gotoAndStop(7);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0165 = function() {
-	this.initialize(ss["zoltr_atlas_1"]);
+	this.initialize(ss["zoltr_atlas_2"]);
 	this.gotoAndStop(8);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0166 = function() {
-	this.initialize(ss["zoltr_atlas_1"]);
+	this.initialize(ss["zoltr_atlas_2"]);
 	this.gotoAndStop(9);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0167 = function() {
-	this.initialize(ss["zoltr_atlas_1"]);
+	this.initialize(ss["zoltr_atlas_2"]);
 	this.gotoAndStop(10);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0168 = function() {
-	this.initialize(ss["zoltr_atlas_1"]);
+	this.initialize(ss["zoltr_atlas_2"]);
 	this.gotoAndStop(11);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0169 = function() {
-	this.initialize(ss["zoltr_atlas_1"]);
+	this.initialize(ss["zoltr_atlas_2"]);
 	this.gotoAndStop(12);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0170 = function() {
-	this.initialize(ss["zoltr_atlas_1"]);
+	this.initialize(ss["zoltr_atlas_2"]);
 	this.gotoAndStop(13);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0171 = function() {
-	this.initialize(ss["zoltr_atlas_1"]);
+	this.initialize(ss["zoltr_atlas_2"]);
 	this.gotoAndStop(14);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0172 = function() {
-	this.initialize(ss["zoltr_atlas_1"]);
+	this.initialize(ss["zoltr_atlas_2"]);
 	this.gotoAndStop(15);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0173 = function() {
-	this.initialize(ss["zoltr_atlas_1"]);
+	this.initialize(ss["zoltr_atlas_2"]);
 	this.gotoAndStop(16);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0174 = function() {
-	this.initialize(ss["zoltr_atlas_1"]);
+	this.initialize(ss["zoltr_atlas_2"]);
 	this.gotoAndStop(17);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0175 = function() {
-	this.initialize(ss["zoltr_atlas_1"]);
+	this.initialize(ss["zoltr_atlas_2"]);
 	this.gotoAndStop(18);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0176 = function() {
-	this.initialize(ss["zoltr_atlas_1"]);
+	this.initialize(ss["zoltr_atlas_2"]);
 	this.gotoAndStop(19);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0177 = function() {
-	this.initialize(ss["zoltr_atlas_1"]);
+	this.initialize(ss["zoltr_atlas_2"]);
 	this.gotoAndStop(20);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0178 = function() {
-	this.initialize(ss["zoltr_atlas_1"]);
+	this.initialize(ss["zoltr_atlas_2"]);
 	this.gotoAndStop(21);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0179 = function() {
-	this.initialize(ss["zoltr_atlas_1"]);
+	this.initialize(ss["zoltr_atlas_2"]);
 	this.gotoAndStop(22);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0180 = function() {
-	this.initialize(ss["zoltr_atlas_1"]);
+	this.initialize(ss["zoltr_atlas_2"]);
 	this.gotoAndStop(23);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0185 = function() {
-	this.initialize(ss["zoltr_atlas_1"]);
+	this.initialize(ss["zoltr_atlas_2"]);
 	this.gotoAndStop(24);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0186 = function() {
-	this.initialize(ss["zoltr_atlas_1"]);
+	this.initialize(ss["zoltr_atlas_2"]);
 	this.gotoAndStop(25);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0187 = function() {
-	this.initialize(ss["zoltr_atlas_1"]);
+	this.initialize(ss["zoltr_atlas_2"]);
 	this.gotoAndStop(26);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0188 = function() {
-	this.initialize(ss["zoltr_atlas_1"]);
+	this.initialize(ss["zoltr_atlas_2"]);
 	this.gotoAndStop(27);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0189 = function() {
-	this.initialize(ss["zoltr_atlas_1"]);
+	this.initialize(ss["zoltr_atlas_2"]);
 	this.gotoAndStop(28);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0190 = function() {
-	this.initialize(ss["zoltr_atlas_1"]);
+	this.initialize(ss["zoltr_atlas_2"]);
 	this.gotoAndStop(29);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0200 = function() {
-	this.initialize(ss["zoltr_atlas_1"]);
+	this.initialize(ss["zoltr_atlas_2"]);
 	this.gotoAndStop(30);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0201 = function() {
-	this.initialize(ss["zoltr_atlas_1"]);
+	this.initialize(ss["zoltr_atlas_2"]);
 	this.gotoAndStop(31);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0202 = function() {
-	this.initialize(ss["zoltr_atlas_1"]);
+	this.initialize(ss["zoltr_atlas_2"]);
 	this.gotoAndStop(32);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0203 = function() {
-	this.initialize(ss["zoltr_atlas_1"]);
+	this.initialize(ss["zoltr_atlas_2"]);
 	this.gotoAndStop(33);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0204 = function() {
-	this.initialize(ss["zoltr_atlas_1"]);
+	this.initialize(ss["zoltr_atlas_2"]);
 	this.gotoAndStop(34);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0205 = function() {
-	this.initialize(ss["zoltr_atlas_1"]);
+	this.initialize(ss["zoltr_atlas_2"]);
 	this.gotoAndStop(35);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0206 = function() {
-	this.initialize(ss["zoltr_atlas_1"]);
+	this.initialize(ss["zoltr_atlas_2"]);
 	this.gotoAndStop(36);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0207 = function() {
-	this.initialize(ss["zoltr_atlas_1"]);
+	this.initialize(ss["zoltr_atlas_2"]);
 	this.gotoAndStop(37);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0208 = function() {
-	this.initialize(ss["zoltr_atlas_1"]);
+	this.initialize(ss["zoltr_atlas_2"]);
 	this.gotoAndStop(38);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0209 = function() {
-	this.initialize(ss["zoltr_atlas_1"]);
+	this.initialize(ss["zoltr_atlas_2"]);
 	this.gotoAndStop(39);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0210 = function() {
-	this.initialize(ss["zoltr_atlas_1"]);
+	this.initialize(ss["zoltr_atlas_2"]);
 	this.gotoAndStop(40);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib._0215 = function() {
+	this.initialize(ss["zoltr_atlas_2"]);
+	this.gotoAndStop(41);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib._0216 = function() {
+	this.initialize(ss["zoltr_atlas_2"]);
+	this.gotoAndStop(42);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib._0217 = function() {
+	this.initialize(ss["zoltr_atlas_2"]);
+	this.gotoAndStop(43);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib._0218 = function() {
+	this.initialize(ss["zoltr_atlas_2"]);
+	this.gotoAndStop(44);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib._0219 = function() {
+	this.initialize(ss["zoltr_atlas_1"]);
+	this.gotoAndStop(0);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib._0220 = function() {
+	this.initialize(ss["zoltr_atlas_1"]);
+	this.gotoAndStop(1);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib._0221 = function() {
+	this.initialize(ss["zoltr_atlas_1"]);
+	this.gotoAndStop(2);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib._0222 = function() {
+	this.initialize(ss["zoltr_atlas_1"]);
+	this.gotoAndStop(3);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib._0223 = function() {
+	this.initialize(ss["zoltr_atlas_1"]);
+	this.gotoAndStop(4);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib._0224 = function() {
+	this.initialize(ss["zoltr_atlas_1"]);
+	this.gotoAndStop(5);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib._0225 = function() {
+	this.initialize(ss["zoltr_atlas_1"]);
+	this.gotoAndStop(6);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib._0226 = function() {
+	this.initialize(ss["zoltr_atlas_1"]);
+	this.gotoAndStop(7);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib._0227 = function() {
+	this.initialize(ss["zoltr_atlas_1"]);
+	this.gotoAndStop(8);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib._0228 = function() {
+	this.initialize(ss["zoltr_atlas_1"]);
+	this.gotoAndStop(9);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib._0229 = function() {
+	this.initialize(ss["zoltr_atlas_1"]);
+	this.gotoAndStop(10);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib._0230 = function() {
+	this.initialize(ss["zoltr_atlas_1"]);
+	this.gotoAndStop(11);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib._0240 = function() {
+	this.initialize(ss["zoltr_atlas_1"]);
+	this.gotoAndStop(12);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib._0241 = function() {
+	this.initialize(ss["zoltr_atlas_1"]);
+	this.gotoAndStop(13);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib._0242 = function() {
+	this.initialize(ss["zoltr_atlas_1"]);
+	this.gotoAndStop(14);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib._0243 = function() {
+	this.initialize(ss["zoltr_atlas_1"]);
+	this.gotoAndStop(15);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib._0244 = function() {
+	this.initialize(ss["zoltr_atlas_1"]);
+	this.gotoAndStop(16);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib._0245 = function() {
+	this.initialize(ss["zoltr_atlas_1"]);
+	this.gotoAndStop(17);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib._0246 = function() {
+	this.initialize(ss["zoltr_atlas_1"]);
+	this.gotoAndStop(18);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib._0247 = function() {
+	this.initialize(ss["zoltr_atlas_1"]);
+	this.gotoAndStop(19);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib._0248 = function() {
+	this.initialize(ss["zoltr_atlas_1"]);
+	this.gotoAndStop(20);
 }).prototype = p = new cjs.Sprite();
 // helper functions:
 
@@ -960,6 +1136,114 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 	prototype.frameBounds = frameBounds;
 	return prototype;
 	}
+
+
+(lib.TickToCam = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// timeline functions:
+	this.frame_15 = function() {
+		let _this = this;
+		_this.stop();
+	}
+
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).wait(15).call(this.frame_15).wait(1));
+
+	// Layer_1
+	this.instance = new lib._0215();
+
+	this.instance_1 = new lib._0216();
+
+	this.instance_2 = new lib._0217();
+
+	this.instance_3 = new lib._0218();
+
+	this.instance_4 = new lib._0219();
+
+	this.instance_5 = new lib._0220();
+
+	this.instance_6 = new lib._0221();
+
+	this.instance_7 = new lib._0222();
+
+	this.instance_8 = new lib._0223();
+
+	this.instance_9 = new lib._0224();
+
+	this.instance_10 = new lib._0225();
+
+	this.instance_11 = new lib._0226();
+
+	this.instance_12 = new lib._0227();
+
+	this.instance_13 = new lib._0228();
+
+	this.instance_14 = new lib._0229();
+
+	this.instance_15 = new lib._0230();
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_2}]},1).to({state:[{t:this.instance_3}]},1).to({state:[{t:this.instance_4}]},1).to({state:[{t:this.instance_5}]},1).to({state:[{t:this.instance_6}]},1).to({state:[{t:this.instance_7}]},1).to({state:[{t:this.instance_8}]},1).to({state:[{t:this.instance_9}]},1).to({state:[{t:this.instance_10}]},1).to({state:[{t:this.instance_11}]},1).to({state:[{t:this.instance_12}]},1).to({state:[{t:this.instance_13}]},1).to({state:[{t:this.instance_14}]},1).to({state:[{t:this.instance_15}]},1).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,216,384);
+
+
+(lib.TicketTear = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// timeline functions:
+	this.frame_9 = function() {
+		let _this = this;
+		_this.stop();
+	}
+
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).wait(9).call(this.frame_9).wait(1));
+
+	// Layer_1
+	this.instance = new lib._0240();
+
+	this.instance_1 = new lib._0241();
+
+	this.instance_2 = new lib._0242();
+
+	this.instance_3 = new lib._0243();
+
+	this.instance_4 = new lib._0244();
+
+	this.instance_5 = new lib._0245();
+
+	this.instance_6 = new lib._0246();
+
+	this.instance_7 = new lib._0247();
+
+	this.instance_8 = new lib._0248();
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_2}]},1).to({state:[{t:this.instance_3}]},1).to({state:[{t:this.instance_4}]},1).to({state:[{t:this.instance_5}]},1).to({state:[{t:this.instance_6}]},1).to({state:[{t:this.instance_7}]},1).to({state:[{t:this.instance_8}]},1).to({state:[]},1).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,216,384);
 
 
 (lib.TicketEnter = function(mode,startPosition,loop,reversed) {
@@ -1468,9 +1752,16 @@ if (reversed == null) { reversed = false; }
 	// Layer_1
 	this.instance = new lib.TicketEnter();
 	this.instance.setTransform(108,192,1,1,0,0,0,108,192);
-	this.instance._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({_off:false},0).wait(1));
+	this.ticket_to_cam = new lib.TickToCam();
+	this.ticket_to_cam.name = "ticket_to_cam";
+	this.ticket_to_cam.setTransform(108,192,1,1,0,0,0,108,192);
+
+	this.ticket_tear = new lib.TicketTear();
+	this.ticket_tear.name = "ticket_tear";
+	this.ticket_tear.setTransform(108,192,1,1,0,0,0,108,192);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance}]},1).to({state:[{t:this.ticket_to_cam}]},1).to({state:[{t:this.ticket_tear}]},1).wait(1));
 
 	this._renderFirstFrame();
 
@@ -1744,7 +2035,8 @@ lib.properties = {
 	manifest: [
 		{src:"images/zoltr_atlas_1.png", id:"zoltr_atlas_1"},
 		{src:"images/zoltr_atlas_2.png", id:"zoltr_atlas_2"},
-		{src:"images/zoltr_atlas_3.png", id:"zoltr_atlas_3"}
+		{src:"images/zoltr_atlas_3.png", id:"zoltr_atlas_3"},
+		{src:"images/zoltr_atlas_4.png", id:"zoltr_atlas_4"}
 	],
 	preloads: []
 };

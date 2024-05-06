@@ -62,7 +62,7 @@ function page_init(lib) {
     let textBox = page.text_box;
     let writeToText = false;
 
-    let introText = "Insert a |coin| to receive your |technology| fortune"
+    let introText = "Insert a |coin| to receive your |tech for|tune";
 
     let fullText = introText;
 
@@ -119,8 +119,51 @@ function page_init(lib) {
         textBox.gotoAndPlay(0);
         textIndex = 0;
 
+        let fortuneTexts =
+            [
+                "Stock up on |goods| and ammunition before the |millennium| bug hits",
+                "Don't |forget| to feed your |Tamagotchi|",
+                "You can always ask |Jeeves| if you have any |questions|",
+                "Invest in |bitcoin| before its too late",
+            ];
+
+        let index = RandomInt(fortuneTexts.length-1);
+
+        fullText = fortuneTexts[index];
+        console.log(fullText);
+
+
     }).wait(1));
 
+    ticket.ticket_tear.timeline.addTween(createjs.Tween.get(ticket.ticket_tear).wait(ticket.ticket_tear.totalFrames - 1).call(function (e) {
+
+        displayTicket = false;
+
+        writeToText = false;
+
+        introText = "Insert a |coin| to receive your |tech for|tune";
+
+        fullText = introText;
+
+
+        textIndex = 0;
+
+        timer = 0;
+        textTime = .05;
+        textSpeedTime = .1;
+        currentTime = textTime;
+
+        blinkTimer = 0;
+        blinkTime = .5;
+        blinkOn = false;
+        speed = false;
+
+        coinUsed = false;
+
+
+        textBox.gotoAndPlay(0);
+
+    }).wait(1));
 
     function onResize(e) {
 
@@ -180,13 +223,19 @@ function page_init(lib) {
 
                 if(displayTicket){
 
-                    //TODO: reviel ticket
+                    ticket.gotoAndStop(2);
 
                 }
             }
 
         }
     });
+
+    ticket.ticket_to_cam.addEventListener("click", function(e){
+        if(ticket.ticket_to_cam.currentFrame === ticket.ticket_to_cam.totalFrames - 1){
+            ticket.gotoAndStop(3);
+        }
+    })
 
     function update(t) {
 
